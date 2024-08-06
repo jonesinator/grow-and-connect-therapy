@@ -59,7 +59,7 @@ export default function MainFooter(props: MainFooterProps) {
       </div>
       <Image
         src={bg_image as StaticImageData}
-        alt=""
+        alt="Spray Painted Background"
         className="height-[40%] md:height-full mx-auto absolute bottom-0 z-[-1] hue-rotate-60 saturate-80 opacity-80"
         fill
       />

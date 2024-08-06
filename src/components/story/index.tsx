@@ -40,6 +40,7 @@ type StoryProps = VariantProps<typeof storyVariants> &
   VariantProps<typeof alignVariants> &
   SectionVariants & {
     children: ReactNode;
+    alt: string;
     image: StaticImageData;
     className?: string;
     sectionClassName?: string;
@@ -63,7 +64,7 @@ export default function Story({
       >
         <div className="basis-1/2 flex justify-center place-items-center mx-0 md:mx-3">
           <Image
-            alt=""
+            alt={props.alt}
             src={props.image}
             className="h-[400px] md:h-auto md:h-max-[800px] md:w-[450px] md:rounded-b-2xl md:rounded-t-[300px] md:aspect-[1.33/2] border-y md:border border-theme-black object-cover md:mx-3"
           />
