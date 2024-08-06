@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eux
+
+npx eslint --cache .
+npx knip
+npx depcruise .
+npx prettier --check .

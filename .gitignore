@@ -1,0 +1,5 @@
+.eslintcache
+.next
+out
+public/sitemap.xml
+node_modules
