@@ -6,33 +6,25 @@ import { Links } from "@lib/links";
 
 import bg_image from "./images/bg.svg";
 
-interface MainFooterProps {
-  links: Links;
-}
-
-export default function MainFooter(props: MainFooterProps) {
+export default function MainFooter({ links }: { links: Links }) {
   return (
-    <footer className="border-t border-theme-black pt-20 pb-20 relative overflow-hidden bg-background-light z-[-1]">
-      <div className="block w-full max-w-none px-4 mx-auto sm:px-6 md:max-w-[728px] lg:max-w-[1600px]">
-        <div className="grid grid-cols-1 gap-10 relative grid-rows-[auto] sm:grid-cols-2 md:grid-cols-3 z-[1]">
-          <div className="flex flex-col items-start">
-            {props.links.map((link) => {
-              return (
-                <Link
-                  key={link.name}
-                  href={link.path}
-                  className="theme-text-h4"
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
+    <footer className="relative border-t border-theme-black pt-20 pb-20 overflow-hidden">
+      {/* Content */}
+      <div className="w-full px-4 mx-auto sm:px-6 md:max-w-[728px] lg:max-w-[1600px]">
+        {/* Content/Links/Social */}
+        <div className="flex flex-col gap-10 relative md:flex-row justify-self-start">
+          <div className="flex flex-col items-start theme-text-h4 basis-1/3">
+            {links.map((link) => (
+              <Link key={link.name} href={link.path}>
+                {link.name}
+              </Link>
+            ))}
           </div>
-          <div className="gap-4 justify-around flex flex-col md:flex-row md:gap-10 theme-text-large">
-            <p className="my-0 max-w-40 theme-text-large">
-              I don't know what should go here...
-            </p>
-            <ul className="flex flex-col theme-text-large">
+          <p className="theme-text-large basis-1/3 justify-self-center w-full">
+            I don't know what should go here...
+          </p>
+          <div className="gap-4 flex flex-col md:flex-row md:gap-10 theme-text-large basis-1/3">
+            <ul className="flex flex-col theme-text-large w-full text-left md:text-right">
               <li>
                 <a href="http://www.instagram.com">Instagram</a>
               </li>
@@ -45,9 +37,11 @@ export default function MainFooter(props: MainFooterProps) {
             </ul>
           </div>
         </div>
-        <div className="mt-16 sm:mt-20 md:mt-24 footer-bottom-wrap">
+
+        {/*  */}
+        <div className="mt-16 sm:mt-20 md:mt-24">
           <p className="text-center text-[80px] sm:text-[120px] md:text-[190px] lg:text-[256px] leading-[95%] tracking-[-.03em] font-mono">
-            Grow / Connect
+            Grow &amp; Connect
           </p>
           <div className="gap-4 flex-col mt-5 md:mt-0 md:gap-10 md:flex-row text-center justify-between items-center flex">
             <p className="theme-text-label">Made in Colorado</p>
@@ -57,12 +51,18 @@ export default function MainFooter(props: MainFooterProps) {
           </div>
         </div>
       </div>
-      <Image
-        src={bg_image as StaticImageData}
-        alt="Spray Painted Background"
-        className="height-[40%] md:height-full mx-auto absolute bottom-0 z-[-1] hue-rotate-60 saturate-80 opacity-80"
-        fill
-      />
+
+      {/* Background. */}
+      <div className="absolute top-0 m-0 p-0 bg-background-light w-full h-full z-[-1]">
+        <Image
+          src={bg_image as StaticImageData}
+          alt="Spray Painted Background"
+          className="mx-auto absolute bottom-0 hue-rotate-60 saturate-80 opacity-80"
+          sizes="100vw"
+          fill
+          quality={100}
+        />
+      </div>
     </footer>
   );
 }
