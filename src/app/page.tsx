@@ -3,11 +3,7 @@ import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import ReactFastMarquee from "react-fast-marquee";
-import {
-  BoltIcon,
-  FaceSmileIcon,
-  HeartIcon,
-} from "@heroicons/react/24/outline";
+import { BoltIcon } from "@heroicons/react/24/outline";
 
 import MainHeader from "@components/main-header";
 import SlideHeader from "@components/slide-header";
@@ -20,36 +16,44 @@ import woman from "./images/woman.jpg";
 import man from "./images/man.jpg";
 import tree from "./images/tree.jpg";
 import hero_bg from "./images/hero-bg.svg";
+import { cn } from "@lib/utils";
 
 export default function Page() {
-  type MarqueeProps = { backgroundColor: string; contents: string }[];
+  type MarqueeProps = { className: string; contents: string }[];
 
   const marquee_1: MarqueeProps = [
-    { backgroundColor: "bg-blue-300", contents: "Depression" },
-    { backgroundColor: "bg-pink-500", contents: "Abuse Recovery" },
-    { backgroundColor: "bg-orange-500", contents: "Trauma" },
-    { backgroundColor: "bg-black", contents: "Anxiety" },
-    { backgroundColor: "bg-yellow-300", contents: "PTSD" },
-    { backgroundColor: "bg-green-500", contents: "Bipolar Disorder" },
+    { className: "bg-green-200", contents: "Mindfulness" },
+    { className: "bg-pink-200", contents: "Recover" },
+    { className: "bg-orange-200", contents: "Depression" },
+    { className: "bg-gray-200", contents: "Hope" },
+    { className: "bg-yellow-200", contents: "Anxiety" },
   ];
 
   const marquee_2: MarqueeProps = [
-    { backgroundColor: "bg-pink-500", contents: "Bulimia" },
-    { backgroundColor: "bg-black", contents: "Trauma" },
-    { backgroundColor: "bg-yellow-300", contents: "Insomnia" },
-    { backgroundColor: "bg-green-500", contents: "Grief and Loss" },
-    { backgroundColor: "bg-blue-300", contents: "Sadness" },
+    { className: "bg-green-200", contents: "Chronic Illness" },
+    { className: "bg-yellow-200", contents: "Relationships" },
+    { className: "bg-pink-200", contents: "Pain" },
+    { className: "bg-green-200", contents: "Fatigue" },
+    { className: "bg-fuchsia-200", contents: "Emotions" },
+    { className: "bg-indigo-200", contents: "Therapy" },
   ];
 
   const makeMarquee = (marqueeProps: MarqueeProps): ReactNode => {
-    return marqueeProps.map((item) => (
-      <div
-        key={item.contents}
-        className={`${item.backgroundColor} text-theme-white rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3`}
-      >
-        {item.contents}
-      </div>
-    ));
+    return (
+      <ul>
+        {marqueeProps.map((item) => (
+          <li
+            key={item.contents}
+            className={cn(
+              "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block",
+              item.className,
+            )}
+          >
+            {item.contents}
+          </li>
+        ))}
+      </ul>
+    );
   };
 
   return (
@@ -82,13 +86,8 @@ export default function Page() {
           </div>
         </div>
         <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[830px] px-3">
-          We believe
-          <HeartIcon className="size-11 text-red-500 mx-1 inline-block" />
-          that by prioritizing mental well-being, we can foster a happier
-          <FaceSmileIcon className="size-11 text-green-500 mx-1 inline-block" />
-          and more
-          <BoltIcon className="size-10 text-yellow-500 mx-1 inline-block" />
-          productive workforce.
+          Welcome to Grow and Connect Therapy. My name is Jamie and I provide
+          teletherapy to people across Colorado.
         </h2>
         <ReactFastMarquee autoFill={true} direction="left" className="pt-10">
           {makeMarquee(marquee_1)}
