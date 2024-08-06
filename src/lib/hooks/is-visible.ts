@@ -2,6 +2,7 @@ import { useEffect, useState, type MutableRefObject } from "react";
 
 export function useIsVisible(
   ref: MutableRefObject<Element | null>,
+  margin = "0px",
   shouldTrack = true,
 ) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -11,11 +12,14 @@ export function useIsVisible(
       return;
     }
 
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry) {
-        setIntersecting(entry.isIntersecting);
-      }
-    });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry) {
+          setIntersecting(entry.isIntersecting);
+        }
+      },
+      { rootMargin: margin },
+    );
 
     observer.observe(ref.current);
 

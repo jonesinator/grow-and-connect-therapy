@@ -1,4 +1,8 @@
-import { ReactNode } from "react";
+"use client";
+
+import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
+
+import { useIsSeen } from "@lib/hooks/is-seen";
 
 interface VideoBlockProps {
   videos: string[];
@@ -7,10 +11,21 @@ interface VideoBlockProps {
 }
 
 export default function VideoBlock(props: VideoBlockProps) {
+  const [bgClass, setBgClass] = useState<CSSProperties>({});
+  const ref = useRef<HTMLElement | null>(null);
+  const isSeen = useIsSeen(ref, "100px");
+
+  useEffect(() => {
+    if (isSeen) {
+      setBgClass({ backgroundImage: `url("${props.background}")` });
+    }
+  }, [isSeen]);
+
   return (
     <section
+      ref={ref}
       className="relative border-y border-black py-[200px] flex flex-col bg-cover bg-center"
-      style={{ backgroundImage: `url("${props.background}")` }}
+      style={bgClass}
     >
       <video
         className="w-full h-full object-cover m-auto absolute top-[-100%] bottom-[-100%] left-[-100%] right-[-100%]"
