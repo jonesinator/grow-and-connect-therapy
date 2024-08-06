@@ -39,9 +39,9 @@ export default function RootLayout(props: RootLayoutProps) {
   const navLinks: Links = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
+    { name: "Specialties", path: "/specialties" },
     { name: "Pricing", path: "/pricing" },
-    { name: "Our Story", path: "/our-story" },
-    { name: "Blog", path: "/blog" },
+    { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
   ];
 

@@ -56,7 +56,7 @@ export default function Page() {
     <>
       <MainHeader>
         <SlideHeader>
-          <h1 className="mb-10">Grow and Connect Therapy</h1>
+          <h1 className="mb-10">Grow &amp; Connect Therapy</h1>
         </SlideHeader>
         <Link href="/contact">
           <ArrowButton>Get in Touch</ArrowButton>
@@ -81,7 +81,7 @@ export default function Page() {
             />
           </div>
         </div>
-        <h2 className="text-h4 mx-auto my-16 text-center md:max-w-[830px] px-3">
+        <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[830px] px-3">
           We believe
           <HeartIcon className="size-11 text-red-500 mx-1 inline-block" />
           that by prioritizing mental well-being, we can foster a happier
@@ -291,7 +291,7 @@ export default function Page() {
       >
         <p className="theme-text-label text-theme-white">Hello</p>
         <SlideHeader>
-          <h2 className="text-h1 text-theme-white my-10">
+          <h2 className="theme-text-h1 text-theme-white my-10">
             This is a <div className="inline-block text-red-500">test</div>
             <BoltIcon className="size-32 inline-block mb-8" />
           </h2>

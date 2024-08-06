@@ -59,14 +59,8 @@ export default function Navbar(props: NavbarProps) {
 
   return (
     <div className="z-10 gap-6 flex-col flex fixed top-0 right-0 left-0 bottom-auto theme-text-regular">
-      <div className="gap-3 border-b border-theme-black bg-background-orange justify-center align-center flex py-2 px-6">
-        <p>We are under construction</p>
-        <Link href="/blog" className="underline">
-          Click this Please
-        </Link>
-      </div>
       <div
-        className={`bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both ${menuState.open ? "" : ""}`}
+        className={`pt-10 bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both ${menuState.open ? "" : ""}`}
       >
         <div className="border border-theme-black backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[1600px] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
           <Link
