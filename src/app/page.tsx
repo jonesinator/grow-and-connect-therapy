@@ -59,7 +59,7 @@ export default function Page() {
           <h1 className="mb-10">Grow and Connect Therapy</h1>
         </SlideHeader>
         <Link href="/contact">
-          <ArrowButton>Get in Touch</ArrowButton>
+          <ArrowButton>Preview</ArrowButton>
         </Link>
       </MainHeader>
 
