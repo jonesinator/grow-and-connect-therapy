@@ -6,19 +6,6 @@ import { z } from "zod";
 import MainHeader from "@components/main-header";
 import SlideHeader from "@components/slide-header";
 
-export const EmailProps = z.object({
-  email: z.string().email(),
-  message: z.string(),
-});
-
-const Email: FC<z.infer<typeof EmailProps>> = (props) => (
-  <div>
-    <h1>Initial Contact</h1>
-    <p>From: {props.email}</p>
-    <p>Message: {props.message}</p>
-  </div>
-);
-
 export const metadata: Metadata = {
   title: "Contact",
 };
@@ -26,6 +13,19 @@ export const metadata: Metadata = {
 export default function Page() {
   async function sendEmail(formData: FormData) {
     "use server";
+
+    const EmailProps = z.object({
+      email: z.string().email(),
+      message: z.string(),
+    });
+
+    const Email: FC<z.infer<typeof EmailProps>> = (props) => (
+      <div>
+        <h1>Initial Contact</h1>
+        <p>From: {props.email}</p>
+        <p>Message: {props.message}</p>
+      </div>
+    );
 
     const parsedFormData = EmailProps.safeParse({
       email: formData.get("email"),
