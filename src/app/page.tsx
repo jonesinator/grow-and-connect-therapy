@@ -87,7 +87,7 @@ export default function Page() {
         </div>
         <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[830px] px-3">
           Welcome to Grow and Connect Therapy. My name is Jamie and I provide
-          teletherapy to people across Colorado.
+          teletherapy to adults across Colorado.
         </h2>
         <ReactFastMarquee autoFill={true} direction="left" className="pt-10">
           {makeMarquee(marquee_1)}

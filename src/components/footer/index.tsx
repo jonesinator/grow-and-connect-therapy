@@ -29,9 +29,6 @@ export default function MainFooter({ links }: { links: Links }) {
               <li>
                 <a href="http://www.facebook.com">Facebook</a>
               </li>
-              <li>
-                <a href="http://www.tiktok.com">TikTok</a>
-              </li>
             </ul>
           </div>
         </div>
