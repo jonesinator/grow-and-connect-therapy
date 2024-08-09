@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "husky",
     "dev": "bash ./scripts/dev",
-    "build": "next build",
-    "postbuild": "next-sitemap"
+    "build": "bash ./scripts/build",
+    "prepare": "husky"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",

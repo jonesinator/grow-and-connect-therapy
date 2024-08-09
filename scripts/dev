@@ -10,8 +10,8 @@ URL="http://localhost:${PORT}"
 trap "exit" INT TERM
 trap "kill 0" EXIT
 
-# Install Javascript dependencies if they aren't already installed.
-[[ ! -d node_modules ]] && npm install
+# Install Javascript dependencies.
+npm install
 
 # If there's another of this same dev server already running, kill it to effectively "replace" it.
 PEER_PROCESS="$(cat .nextpid || true)"
