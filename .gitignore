@@ -1,6 +1,7 @@
 .env
 .eslintcache
 .next
+.nextpid
 out
 public/sitemap.xml
 node_modules

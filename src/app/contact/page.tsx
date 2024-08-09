@@ -52,7 +52,6 @@ export default function Page() {
         <SlideHeader>
           <h1>Contact</h1>
         </SlideHeader>
-        {/* eslint doesn't like next.js's async action functionality, but it works */}
         {/* eslint-disable-next-line */}
         <form action={sendEmail}>
           <label htmlFor="email">Email:</label>

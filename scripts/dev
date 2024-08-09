@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Convenience script for launching the Next.js dev server and opening a browser window.
+set -euxo pipefail
+
+# Allow the port to be set using the first command-line argument, and default it to 3000.
+PORT="${1:-3000}"
+URL="http://localhost:${PORT}"
+
+# Ensure any background jobs get killed when we exit.
+trap "exit" INT TERM
+trap "kill 0" EXIT
+
+# Install Javascript dependencies if they aren't already installed.
+[[ ! -d node_modules ]] && npm install
+
+# If there's another of this same dev server already running, kill it to effectively "replace" it.
+PEER_PROCESS="$(cat .nextpid || true)"
+if [[ -n "${PEER_PROCESS}" ]]; then
+  if kill "${PEER_PROCESS}"; then
+    rm .nextpid
+  fi
+fi
+
+# If something is already consuming the port, but it wasn't a peer process, bail.
+PORT_PROCESS="$(lsof -i ":${PORT}" | grep LISTEN | awk '{print $2}' || true)"
+[[ -n "${PORT_PROCESS}" ]] && echo "Something is still consuming the port!" && exit 1
+
+# Start the development server running in the background.
+npx next dev -p "${PORT}" &
+SERVER_PID="${!}"
+echo "${SERVER_PID}" > .nextpid
+
+# Wait for the page to load successfully.
+until curl --fail --silent "${URL}" &>/dev/null; do echo "Waiting for server." && sleep 2; done
+
+# Launch a browser window to the development server.
+open "${URL}" || xdg-open "${URL}" || true
+
+# Wait for the next server to die (or until we're interrupted.)
+wait "${SERVER_PID}"

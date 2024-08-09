@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
+    "dev": "bash ./scripts/dev",
     "build": "next build",
     "postbuild": "next-sitemap"
   },
