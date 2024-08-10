@@ -18,6 +18,11 @@ import woman from "./images/woman.jpg";
 import man from "./images/man.jpg";
 import tree from "./images/tree.jpg";
 import hero_bg from "./images/hero-bg.svg";
+
+import expand_left from "./images/expand-left.jpg";
+import expand_middle from "./images/expand-middle.jpg";
+import expand_right from "./images/expand-right.jpg";
+
 import { cn } from "@lib/utils";
 
 export default function Page() {
@@ -102,7 +107,9 @@ export default function Page() {
       <div className="border-t border-b border-theme-black bg-background-orange pt-20">
         <div className="px-6 mx-auto max-w-[100rem]">
           <div className="px-6 max-w-[540px]">
-            <h2>Frequently Asked Questions</h2>
+            <SlideHeader>
+              <h2>Frequently Asked Questions</h2>
+            </SlideHeader>
           </div>
           <div className="max-w-[640px] ml-auto mr-0">
             <Accordion.Root
@@ -222,6 +229,59 @@ export default function Page() {
                 </Accordion.Content>
               </Accordion.Item>
             </Accordion.Root>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-b border-theme-black bg-background-light pt-40">
+        <div className="mb-28 px-6 mx-auto max-w-[100rem]">
+          <div className="px-6 max-w-[50em]">
+            <SlideHeader>
+              <h2>Therapy</h2>
+            </SlideHeader>
+            <p className="theme-text-large pt-6">
+              I want to help you make change in your life and relationships.
+            </p>
+          </div>
+          <div className="mt-16 flex gap-6">
+            <div className="relative w-[25%] min-w-[25%] h-[35rem] flex flex-col transition-all duration-500 hover:w-[80%]">
+              <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <p className="w-full theme-text-h3 text-white">For Couples</p>
+              </div>
+              <Image
+                src={expand_left}
+                alt=""
+                className="w-full h-full object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
+              />
+              <h3 className="theme-text-h6 pt-4">Couples Therapy</h3>
+              <p className="pt-2">Support for all relationship structures</p>
+            </div>
+            <div className="relative w-[50%] h-[35rem] flex flex-col items-center">
+              <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <p className="w-full theme-text-h3 text-white">Meet Online</p>
+              </div>
+              <Image
+                src={expand_middle}
+                alt=""
+                className="w-full h-full object-cover border border-theme-black rounded-full"
+              />
+              <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
+              <p className="pt-2">Meet from the comfort of your home</p>
+            </div>
+            <div className="relative w-[25%] min-w-[25%] h-[35rem] flex flex-col items-end transition-all duration-500 hover:w-[80%]">
+              <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                <p className="w-full theme-text-h3 text-white">
+                  Chronic Illness
+                </p>
+              </div>
+              <Image
+                src={expand_right}
+                alt=""
+                className="w-full h-full object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl"
+              />
+              <h3 className="theme-text-h6 pt-4">Mindfulness Strategies</h3>
+              <p className="pt-2">Compassionate and validating care</p>
+            </div>
           </div>
         </div>
       </div>
