@@ -12,6 +12,8 @@ import Story from "@components/story";
 import PhotoCarousel from "@components/photo-carousel";
 import VideoBlock from "@components/video-block";
 
+import * as Accordion from "@radix-ui/react-accordion";
+
 import woman from "./images/woman.jpg";
 import man from "./images/man.jpg";
 import tree from "./images/tree.jpg";
@@ -97,7 +99,134 @@ export default function Page() {
         </ReactFastMarquee>
       </section>
 
-      <Story image={man} alt="Man" colors="dark">
+      <div className="border-t border-b border-theme-black bg-background-orange pt-20">
+        <div className="px-6 mx-auto max-w-[100rem]">
+          <div className="px-6 max-w-[540px]">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div className="max-w-[640px] ml-auto mr-0">
+            <Accordion.Root
+              type="multiple"
+              className="border-t border-theme-black mb-10"
+            >
+              <Accordion.Item
+                value="item-1"
+                className="border-b border-theme-black py-10"
+              >
+                <Accordion.Header asChild>
+                  <Accordion.Trigger asChild>
+                    <div className="flex gap-[3rem]">
+                      <div className="theme-text-h4 text-green-100 font-mono">
+                        01
+                      </div>
+                      <h4>What therapy do you offer?</h4>
+                    </div>
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
+                  asChild
+                >
+                  <p>
+                    We offer a range of therapy options tailored to individual
+                    needs, including cognitive-behavioral therapy (CBT),
+                    mindfulness-based therapy, and couples counseling. Our focus
+                    is on providing modern, effective treatment modalities
+                    suitable for issues like anxiety, depression, relationship
+                    challenges, and more.
+                  </p>
+                </Accordion.Content>
+              </Accordion.Item>
+              <Accordion.Item
+                value="item-2"
+                className="border-b border-theme-black py-10"
+              >
+                <Accordion.Header asChild>
+                  <Accordion.Trigger asChild>
+                    <div className="flex gap-[3rem]">
+                      <div className="theme-text-h4 text-green-100 font-mono">
+                        02
+                      </div>
+                      <h4>How does the process work?</h4>
+                    </div>
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
+                  asChild
+                >
+                  <p>
+                    We offer a range of therapy options tailored to individual
+                    needs, including cognitive-behavioral therapy (CBT),
+                    mindfulness-based therapy, and couples counseling. Our focus
+                    is on providing modern, effective treatment modalities
+                    suitable for issues like anxiety, depression, relationship
+                    challenges, and more.
+                  </p>
+                </Accordion.Content>
+              </Accordion.Item>
+              <Accordion.Item
+                value="item-3"
+                className="border-b border-theme-black py-10"
+              >
+                <Accordion.Header asChild>
+                  <Accordion.Trigger asChild>
+                    <div className="flex gap-[3rem]">
+                      <div className="theme-text-h4 text-green-100 font-mono">
+                        03
+                      </div>
+                      <h4>Who are your typical clients?</h4>
+                    </div>
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
+                  asChild={true}
+                >
+                  <p>
+                    We offer a range of therapy options tailored to individual
+                    needs, including cognitive-behavioral therapy (CBT),
+                    mindfulness-based therapy, and couples counseling. Our focus
+                    is on providing modern, effective treatment modalities
+                    suitable for issues like anxiety, depression, relationship
+                    challenges, and more.
+                  </p>
+                </Accordion.Content>
+              </Accordion.Item>
+              <Accordion.Item
+                value="item-4"
+                className="border-b border-theme-black py-10"
+              >
+                <Accordion.Header asChild>
+                  <Accordion.Trigger asChild>
+                    <div className="flex gap-[3rem]">
+                      <div className="theme-text-h4 text-green-100 font-mono">
+                        04
+                      </div>
+                      <h4>How can I get started?</h4>
+                    </div>
+                  </Accordion.Trigger>
+                </Accordion.Header>
+                <Accordion.Content
+                  className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
+                  asChild
+                >
+                  <p>
+                    We offer a range of therapy options tailored to individual
+                    needs, including cognitive-behavioral therapy (CBT),
+                    mindfulness-based therapy, and couples counseling. Our focus
+                    is on providing modern, effective treatment modalities
+                    suitable for issues like anxiety, depression, relationship
+                    challenges, and more.
+                  </p>
+                </Accordion.Content>
+              </Accordion.Item>
+            </Accordion.Root>
+          </div>
+        </div>
+      </div>
+
+      <Story image={man} alt="Man" colors="dark" borders="none">
         <p className="theme-text-label">Our Mission</p>
         <SlideHeader>
           <h2>Care for a Happier Life</h2>
