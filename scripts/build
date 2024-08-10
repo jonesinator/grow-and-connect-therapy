@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Builds the production website.
-# npm install
 npx next build
 npx next-sitemap
