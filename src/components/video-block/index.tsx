@@ -24,7 +24,7 @@ export default function VideoBlock(props: VideoBlockProps) {
   return (
     <section
       ref={ref}
-      className="relative border-y border-black py-[200px] flex flex-col bg-cover bg-center"
+      className="relative border-y border-black py-[12em] flex flex-col bg-cover bg-center"
       style={bgClass}
     >
       <video

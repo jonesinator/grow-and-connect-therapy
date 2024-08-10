@@ -68,8 +68,8 @@ export default function Page() {
       </MainHeader>
 
       <section>
-        <div className="mx-auto max-w-[1600px]">
-          <div className="mt-[-270px] mx-auto relative flex justify-center">
+        <div className="mx-auto max-w-[100em]">
+          <div className="mt-[-16.875em] mx-auto relative flex justify-center">
             <Image
               src={hero_bg as StaticImageData}
               alt="Spray Painted Background"
@@ -80,12 +80,12 @@ export default function Page() {
             <Image
               src={tree}
               alt="Tree in a field."
-              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[64px] relative overflow-hidden max-h-[600px]"
+              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[40em]"
               priority={true}
             />
           </div>
         </div>
-        <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[830px] px-3">
+        <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[25em] px-3">
           Welcome to Grow and Connect Therapy. My name is Jamie and I provide
           teletherapy to adults across Colorado.
         </h2>
@@ -116,20 +116,20 @@ export default function Page() {
             <Image
               src={woman}
               alt="Woman"
-              className="w-auto max-h-[200px] md:max-h-[400px] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12.5em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
             />
             <Image
               src={man}
               alt="Man"
-              className="w-auto max-h-[200px] md:max-h-[400px] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12.5em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
             />
           </>
         }
       >
-        <SlideHeader className="basis-1/2 flex justify-start md:justify-center md:w-[450px] mx-3">
+        <SlideHeader className="basis-1/2 flex justify-start md:justify-center md:w-[30em] mx-3">
           <h2>Prioritizing Wellbeing</h2>
         </SlideHeader>
-        <p className="theme-text-large basis-1/2 flex justify-center place-items-center mx-3 mt-3 md:mt-0 max-w-[600px]">
+        <p className="theme-text-large basis-1/2 flex justify-center place-items-center mx-3 mt-3 md:mt-0 max-w-[40em]">
           Her breath exited her mouth in big puffs as if she were smoking a
           cigarette. The morning dew had made her clothes damp and she shivered
           from the chill in the air. There was only one thing that could get her
@@ -241,9 +241,15 @@ export default function Page() {
         imagePosition="left"
         textAlign="center"
       >
-        <p className="theme-text-label">Bond, James Bond</p>
+        <p className="theme-text-label">
+          Bond, James Bond Bond, James Bond Bond, James Bond Bond, James Bond
+          Bond, James Bond Bond, James Bond Bond, James Bond Bond, James Bond{" "}
+        </p>
         <SlideHeader>
-          <h2>Shaken, not Stirred</h2>
+          <h6>
+            Shaken, not Stirred is a phrase or something I don't know don't talk
+            to me.
+          </h6>
         </SlideHeader>
         <p className="theme-text-large">
           My pincher collar is snapped on. Then comes the electric zapper
@@ -309,29 +315,29 @@ export default function Page() {
             <Image
               src={tree}
               alt="Tree"
-              className="w-auto max-h-[200px] md:max-h-[400px] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
             />
             <Image
               src={woman}
               alt="Woman"
-              className="w-auto max-h-[200px] md:max-h-[400px] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
             />
             <Image
               src={man}
               alt="Man"
-              className="w-auto max-h-[200px] md:max-h-[400px] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
             />
           </>
         }
       >
-        <p className="theme-text-large basis-1/2 flex justify-center max-w-[600px] mx-3 overflow-visible">
+        <p className="theme-text-large basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
           All he could think about was how it would all end. There was still a
           bit of uncertainty in the equation, but the basics were there for
           anyone to see. No matter how much he tried to see the positive, it
           wasn't anywhere to be seen. The end was coming and it wasn't going to
           be pretty.
         </p>
-        <SlideHeader className="basis-1/2 flex justify-center max-w-[600px] mx-3 overflow-visible">
+        <SlideHeader className="basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
           <h2>Think About It</h2>
         </SlideHeader>
       </PhotoCarousel>

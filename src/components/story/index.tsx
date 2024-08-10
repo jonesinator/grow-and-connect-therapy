@@ -58,7 +58,7 @@ export default function Story({
       <div
         className={cn(
           storyVariants({ imagePosition, textAlign }),
-          "w-full h-full mx-auto flex flex-col md:max-w-[1600px] place-items-center",
+          "w-full h-full mx-auto flex flex-col md:max-w-[100em] place-items-center",
           className,
         )}
       >
@@ -66,14 +66,14 @@ export default function Story({
           <Image
             alt={props.alt}
             src={props.image}
-            className="h-[400px] md:h-auto md:h-max-[800px] md:w-[450px] md:rounded-b-2xl md:rounded-t-[300px] md:aspect-[1.33/2] border-y md:border border-theme-black object-cover md:mx-3"
+            className="h-[25em] md:h-auto md:h-max-[50em] md:w-[30em] md:rounded-b-2xl md:rounded-t-[20em] md:aspect-[1.33/2] border-y md:border border-theme-black object-cover md:mx-3"
           />
         </div>
         <div className="basis-1/2 mx-3 mt-3 md:mt-0">
           <div
             className={cn(
               alignVariants({ textAlign }),
-              "max-w-[600px] flex flex-col gap-5 mx-0 md:mx-3",
+              "max-w-[40em] flex flex-col gap-5 mx-0 md:mx-3",
             )}
           >
             {props.children}

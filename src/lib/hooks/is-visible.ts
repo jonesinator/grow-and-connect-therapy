@@ -2,7 +2,7 @@ import { useEffect, useState, type MutableRefObject } from "react";
 
 export function useIsVisible(
   ref: MutableRefObject<Element | null>,
-  margin = "0px",
+  margin = "0",
   shouldTrack = true,
 ) {
   const [isIntersecting, setIntersecting] = useState(false);

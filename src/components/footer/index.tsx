@@ -9,7 +9,7 @@ import bg_image from "./images/bg.svg";
 export default function MainFooter({ links }: { links: Links }) {
   return (
     <footer className="relative border-t border-theme-black pt-20 pb-20 overflow-hidden">
-      <div className="w-full px-4 mx-auto md:max-w-[728px] lg:max-w-[1600px]">
+      <div className="w-full px-4 mx-auto md:max-w-[45em] lg:max-w-[100em]">
         <div className="flex flex-col gap-10 relative md:flex-row justify-self-start">
           <div className="flex flex-col items-start theme-text-h4 basis-1/3">
             {links.map((link) => (
@@ -33,7 +33,7 @@ export default function MainFooter({ links }: { links: Links }) {
           </div>
         </div>
         <div className="mt-16 sm:mt-20 md:mt-24">
-          <p className="text-center text-[80px] sm:text-[120px] md:text-[190px] lg:text-[256px] leading-[95%] tracking-[-.03em] font-mono">
+          <p className="text-center text-[5rem] sm:text-[7.5rem] md:text-[12rem] lg:text-[16rem] leading-[12rem] tracking-[-.03rem] font-mono">
             Grow &amp; Connect
           </p>
           <div className="gap-4 flex-col mt-5 md:mt-0 md:gap-10 md:flex-row text-center justify-between items-center flex">

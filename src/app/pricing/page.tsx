@@ -11,9 +11,7 @@ export default function Pricing() {
   return (
     <MainHeader>
       <SlideHeader>
-        <h1 className="tracking-tight my-0 mt-5 mb-3 text-[136px] leading-[82%] font-normal font-mono">
-          Pricing
-        </h1>
+        <h1>Pricing</h1>
       </SlideHeader>
     </MainHeader>
   );

@@ -4,47 +4,47 @@
 
 @layer components {
   .theme-text-h1 {
-    @apply font-mono font-normal text-[64px] sm:text-[80px] md:text-[110px] lg:text-[136px] tracking-[-.03em] leading-[82%];
+    @apply font-mono font-normal text-[4rem] sm:text-[5rem] md:text-[6.875rem] lg:text-[8.5rem] tracking-[-.03rem] leading-[7rem];
   }
 
   .theme-text-h2 {
-    @apply font-mono font-normal text-[48px] sm:text-[64px] md:text-[90px] lg:text-[104px] tracking-[-.03em] leading-[85%];
+    @apply font-mono font-normal text-[3rem] sm:text-[4rem] md:text-[5.625rem] lg:text-[6.5rem] tracking-[-.03rem] leading-[6rem];
   }
 
   .theme-text-h3 {
-    @apply font-mono font-normal text-[32px] sm:text-[48px] md:text-[64px] tracking-[-.03em] leading-[87.5%];
+    @apply font-mono font-normal text-[2rem] sm:text-[3rem] md:text-[4rem] tracking-[-.03rem] leading-[3rem];
   }
 
   .theme-text-h4 {
-    @apply font-sans font-semibold text-[24px] sm:text-[40px] tracking-[-.02em] leading-[120%];
+    @apply font-sans font-semibold text-[1.5rem] sm:text-[2.5rem] tracking-[-.02rem] leading-[3rem];
   }
 
   .theme-text-h5 {
-    @apply font-sans font-semibold text-[20px] sm:text-[24px] tracking-[-.02em] leading-[133%];
+    @apply font-sans font-semibold text-[1.25rem] sm:text-[1.5rem] tracking-[-.02rem] leading-[2rem];
   }
 
   .theme-text-h6 {
-    @apply font-sans font-semibold text-[16px] sm:text-[20px] tracking-[-.02em] leading-[140%];
+    @apply font-sans font-semibold text-[1rem] sm:text-[1.25rem] tracking-[-.02em] leading-[1.75rem];
   }
 
   .theme-text-large {
-    @apply font-sans font-medium text-[16px] sm:text-[20px] tracking-[-.01em] leading-[140%];
+    @apply font-sans font-medium text-[1rem] sm:text-[1.25rem] tracking-[-.01rem] leading-[1.75rem];
   }
 
   .theme-text-regular {
-    @apply font-sans font-medium text-[12px] sm:text-[16px] tracking-[-.01em] leading-[140%];
+    @apply font-sans font-medium text-[0.75rem] sm:text-[1rem] tracking-[-.01rem] leading-[1.75rem];
   }
 
   .theme-text-label {
-    @apply uppercase font-sans font-semibold text-[10px] sm:text-[12px] tracking-[.2em] leading-[160%];
+    @apply uppercase font-sans font-semibold text-[0.625rem] sm:text-[0.75rem] tracking-[.2rem] leading-[1.3rem];
   }
 
   .theme-text-button {
-    @apply font-sans font-medium text-[14px] sm:text-[18px] tracking-[-.01em] leading-[133%];
+    @apply font-sans font-medium text-[0.875rem] sm:text-[1.125rem] tracking-[-.01em] leading-[1.5rem];
   }
 
   .theme-link-nav {
-    @apply font-sans font-medium text-[14px] tracking-[-.01em] leading-[150%];
+    @apply font-sans font-medium text-[0.875rem] tracking-[-.01em] leading-[1.5rem];
   }
 }
 
