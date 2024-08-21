@@ -5,7 +5,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h1: ({ children }) => <h1 className="py-4">{children}</h1>,
     h2: ({ children }) => <h2 className="py-6">{children}</h2>,
     h3: ({ children }) => <h3 className="py-4">{children}</h3>,
-    ul: ({ children }) => <ul className="pl-6 py-1.5 list-disc">{children}</ul>,
+    ul: ({ children }) => (
+      <ul className="pl-6 py-1.5 list-disc theme-text-regular">{children}</ul>
+    ),
+    ol: ({ children }) => (
+      <ol className="pl-6 py-1.5 list-decimal theme-text-regular">
+        {children}
+      </ol>
+    ),
     p: ({ children }) => <p className="py-1.5">{children}</p>,
     ...components,
   };
