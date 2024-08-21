@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 import { cn } from "@lib/utils";
 
-const sectionVariants = cva("py-20 flex place-items-center gap-10", {
+const sectionVariants = cva("pb-10 md:py-20 flex place-items-center gap-10", {
   variants: {
     colors: {
       bright: "bg-background-white text-black",

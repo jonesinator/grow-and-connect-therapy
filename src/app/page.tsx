@@ -49,7 +49,7 @@ export default function Page() {
           <li
             key={item.contents}
             className={cn(
-              "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block",
+              "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block drop-shadow-md md:drop-shadow-lg",
               item.className,
             )}
           >
@@ -71,13 +71,13 @@ export default function Page() {
         </p>
       </MainHeader>
 
-      <section className="mb-20">
+      <section className="mb-10 md:mb-20">
         <div className="mx-auto max-w-[100em]">
           <div className="mt-[-10em] md:mt-[-16.875em] mx-auto relative flex justify-center">
             <Image
               src={mountains_1}
               alt="Tree in a field."
-              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[45em]"
+              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[45em] md:drop-shadow-lg"
               priority={true}
             />
           </div>
@@ -103,8 +103,8 @@ export default function Page() {
         </ReactFastMarquee>
       </section>
 
-      <div className="border-t border-theme-black bg-background-orange pt-40">
-        <div className="pb-28 px-6 mx-auto max-w-[100rem]">
+      <div className="border-t border-theme-black bg-background-orange pt-16 md:pt-32">
+        <div className="pb-16 md:pb-32 px-6 mx-auto max-w-[100rem]">
           <div className="px-6 max-w-[60em]">
             <SlideHeader>
               <h2 className="">Find the Therapeutic Support You Need Today</h2>
@@ -121,7 +121,7 @@ export default function Page() {
               <Image
                 src={expand_left}
                 alt=""
-                className="w-full h-full object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
+                className="w-full h-full object-cover border border-theme-black rounded-b-3xl rounded-t-[24em] drop-shadow-lg"
               />
               <h3 className="theme-text-h6 pt-4">Open and Affirming Therapy</h3>
               <p className="pt-2">Empathetic and Validating Care</p>
@@ -133,7 +133,7 @@ export default function Page() {
               <Image
                 src={expand_middle}
                 alt=""
-                className="w-full h-full object-cover border border-theme-black rounded-full"
+                className="w-full h-full object-cover border border-theme-black rounded-full drop-shadow-lg"
               />
               <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
               <p className="pt-2">Meet from the comfort of your home</p>
@@ -145,7 +145,7 @@ export default function Page() {
               <Image
                 src={expand_right}
                 alt=""
-                className="w-full h-full object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl"
+                className="w-full h-full object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl drop-shadow-lg"
               />
               <h3 className="theme-text-h6 pt-4">Manage Your Moods</h3>
               <p className="pt-2">Learn Mindfulness and Self-Compassion</p>
@@ -155,7 +155,7 @@ export default function Page() {
       </div>
 
       <Story image={jamie} alt="Man" colors="dark" borders="top">
-        <SlideHeader>
+        <SlideHeader className="pt-6">
           <h2>Grow In Yourself, Connect Your Relationships</h2>
         </SlideHeader>
         <p className="theme-text-label">Jamie L. Thompson, LCSW</p>
@@ -177,7 +177,7 @@ export default function Page() {
       >
         <p className="theme-text-label text-white">Get relief</p>
         <SlideHeader>
-          <h2 className="theme-text-h1 text-white my-10">
+          <h2 className="theme-text-h1 text-white my-10 text-center">
             You Are So Worth It
           </h2>
         </SlideHeader>

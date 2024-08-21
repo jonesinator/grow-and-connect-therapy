@@ -66,7 +66,7 @@ export default function Story({
           <Image
             alt={props.alt}
             src={props.image}
-            className="h-[25em] md:h-auto md:h-max-[50em] md:w-[30em] md:rounded-b-2xl md:rounded-t-[20em] md:aspect-[1.33/2] border-y md:border border-theme-black object-cover md:mx-3"
+            className="h-[25em] md:h-auto md:h-max-[50em] md:w-[30em] md:rounded-b-2xl md:rounded-t-[20em] md:aspect-[1.33/2] border-b md:border border-theme-black object-cover md:mx-3 md:drop-shadow-lg"
           />
         </div>
         <div className="basis-1/2 mx-3 mt-3 md:mt-0">
