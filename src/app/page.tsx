@@ -149,7 +149,7 @@ export default function Page() {
         </div>
       </div>
 
-      <Story image={jamie} alt="Man" colors="dark" borders="none">
+      <Story image={jamie} alt="Man" colors="dark" borders="top">
         <SlideHeader>
           <h2>Grow In Yourself, Connect Your Relationships</h2>
         </SlideHeader>
@@ -163,6 +163,7 @@ export default function Page() {
           offer a free 15 minute consultation for us to briefly discuss your
           needs and explore if I would be a good fit.
         </p>
+        <ArrowButton>let's chat</ArrowButton>
       </Story>
 
       <VideoBlock
@@ -218,7 +219,7 @@ export default function Page() {
         </p>
       </PhotoCarousel>
 
-      <div className="border-t border-theme-black bg-background-orange pt-20">
+      <div className="border-t border-theme-black bg-background-muddy pt-20 pb-1">
         <div className="px-6 mx-auto max-w-[100rem]">
           <div className="px-6 max-w-[540px] mb-10">
             <SlideHeader>
