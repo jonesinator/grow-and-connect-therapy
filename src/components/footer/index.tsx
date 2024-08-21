@@ -14,29 +14,56 @@ export default function MainFooter({ links }: { links: Links }) {
               </Link>
             ))}
           </div>
-          <p className="theme-text-large basis-1/3 justify-self-center w-full">
-            I don't know what should go here...
-          </p>
+          <div className="theme-text-large basis-1/3 justify-self-center w-full">
+            <p>
+              I do not offer crisis services - if this is a mental health
+              emergency, please contact the Colorado Crisis Line at
+              844.493.8255.
+            </p>
+            <br />
+            <p>
+              This website is intended for a general audience, for educational
+              and informational purposes only. The content is not a substitute
+              for individual treatment by a qualified medical professional.
+              Visiting the website and viewing its content does not create a
+              therapist/ patient relationship between visitors and Jamie L
+              Thompson, LCSW or Grow and Connect Therapy.
+            </p>
+          </div>
           <div className="gap-4 flex flex-col md:flex-row md:gap-10 theme-text-large basis-1/3">
             <ul className="flex flex-col theme-text-large w-full text-left md:text-right">
               <li>
-                <a href="http://www.instagram.com">Instagram</a>
+                <a href="mailto:jamie@growandconnecttherapy.com">
+                  jamie@growandconnecttherapy.com
+                </a>
               </li>
               <li>
-                <a href="http://www.facebook.com">Facebook</a>
+                <a href="tel:17205045388">(720) 504-5388</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/growandconnect_therapy/">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61564946903297">
+                  Facebook
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-16 sm:mt-20 md:mt-24">
-          <p className="text-center text-[5rem] sm:text-[7.5rem] md:text-[12rem] lg:text-[16rem] leading-[12rem] tracking-[-.03rem] font-mono">
+          <p className="text-center text-[4.3rem] sm:text-[6.5rem] lg:text-[10rem] leading-[80%] tracking-[-.03rem] font-mono md:mb-8 lg:mb-10">
             Grow &amp; Connect
           </p>
           <div className="gap-4 flex-col mt-5 md:mt-0 md:gap-10 md:flex-row text-center justify-between items-center flex">
-            <p className="theme-text-label">Made in Colorado</p>
-            <p className="theme-text-label">
-              ©2024 Grow and Connect Therapy, PLLC
-            </p>
+            <Link href="/privacy" className="theme-text-label">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="theme-text-label">
+              Terms and Conditions
+            </Link>
           </div>
         </div>
       </div>
