@@ -80,7 +80,7 @@ export default function Page() {
             <Image
               src={mountains_1}
               alt="Tree in a field."
-              className="md:mx-6 object-cover object-left border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[60em]"
+              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[45em]"
               priority={true}
             />
           </div>
@@ -90,10 +90,18 @@ export default function Page() {
           things isn’t always clear. Let me assist you in building the life you
           want to have. Not everything has to be suffering.
         </h2>
-        <ReactFastMarquee autoFill={true} direction="left" className="pt-10">
+        <ReactFastMarquee
+          autoFill={true}
+          direction="left"
+          className="pt-0 md:pt-10"
+        >
           {makeMarquee(marquee_1)}
         </ReactFastMarquee>
-        <ReactFastMarquee autoFill={true} direction="right" className="pb-10">
+        <ReactFastMarquee
+          autoFill={true}
+          direction="right"
+          className="pb-0 md:pb-10"
+        >
           {makeMarquee(marquee_2)}
         </ReactFastMarquee>
       </section>
@@ -154,7 +162,7 @@ export default function Page() {
           <h2>Grow In Yourself, Connect Your Relationships</h2>
         </SlideHeader>
         <p className="theme-text-label">Jamie L. Thompson, LCSW</p>
-        <p className="theme-text-large">
+        <p className="theme-text-large text-justify">
           Finding a therapist isn’t just about finding someone that specializes
           in your unique needs. It’s also important to find a therapist with
           whom you connect and are able to be vulnerable. When you work with me,
@@ -207,7 +215,7 @@ export default function Page() {
         <SlideHeader className="basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
           <h2>Prioritize Your Well-Being</h2>
         </SlideHeader>
-        <p className="theme-text-large basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
+        <p className="theme-text-large text-justify basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
           Do you feel stuck but can’t figure out how to move forward? Like it
           takes everything you have just to get through each day? Seem
           disconnected from your loved ones? Racing and repetitive thoughts,
@@ -258,19 +266,19 @@ export default function Page() {
                     <Link href="/services#dbt" className="text-theme-white">
                       DBT
                     </Link>
-                    ), mindfulness and self-compassion{" "}
+                    ), and&nbsp;
                     <Link
                       href="/services#strategies"
                       className="text-theme-white"
                     >
-                      strategies
+                      mindfulness and self-compassion strategies
                     </Link>
-                    in my therapeutic work with individual clients. I use
+                    &nbsp;in my therapeutic work with individual clients. I use
                     the&nbsp;
                     <Link href="/services#gottman" className="text-theme-white">
                       Gottman approach
                     </Link>
-                    &nbsp;in addition to guide my work with multiple clients in
+                    &nbsp;in addition, to guide my work with multiple clients in
                     relationships. I’m happy to explain what this looks like
                     more in a&nbsp;
                     <Link href="/contact" className="text-theme-white">
