@@ -224,7 +224,7 @@ export default function Page() {
         </p>
       </PhotoCarousel>
 
-      <div className="border-t border-theme-black bg-background-muddy pt-20 pb-1">
+      <div className="border-t border-theme-black bg-background-muddy pt-10 md:pt-20 pb-1">
         <div className="px-6 mx-auto max-w-[100rem]">
           <div className="px-6 max-w-[540px] mb-10">
             <SlideHeader>

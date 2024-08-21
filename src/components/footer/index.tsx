@@ -4,7 +4,7 @@ import { Links } from "@lib/links";
 
 export default function MainFooter({ links }: { links: Links }) {
   return (
-    <footer className="relative border-t border-theme-black pt-20 pb-20 overflow-hidden">
+    <footer className="relative border-t border-theme-black pt-10 md:pt-20 pb-20 overflow-hidden">
       <div className="w-full px-4 mx-auto md:max-w-[45em] lg:max-w-[100em]">
         <div className="flex flex-col gap-10 relative md:flex-row justify-self-start">
           <div className="flex flex-col items-start theme-text-h4 basis-1/3">

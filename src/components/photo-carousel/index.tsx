@@ -7,7 +7,7 @@ import Section, { type SectionVariants } from "@components/section";
 import { cn } from "@lib/utils";
 
 const photoCarouselVariants = cva(
-  "py-20 flex place-items-center gap-10 flex-col",
+  "py-10 md:py-20 flex place-items-center gap-10 flex-col",
   {
     variants: {
       carouselPosition: {
