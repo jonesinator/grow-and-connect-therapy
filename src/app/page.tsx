@@ -66,14 +66,14 @@ export default function Page() {
         <SlideHeader>
           <h1 className="theme-text-h2 mb-8">Grow &amp; Connect Therapy</h1>
         </SlideHeader>
-        <p className="theme-text-label mb-8">
+        <p className="theme-text-label">
           Affirming care for you &mdash; exactly as you are
         </p>
       </MainHeader>
 
       <section className="mb-20">
         <div className="mx-auto max-w-[100em]">
-          <div className="mt-[-16.875em] mx-auto relative flex justify-center">
+          <div className="mt-[-10em] md:mt-[-16.875em] mx-auto relative flex justify-center">
             <Image
               src={mountains_1}
               alt="Tree in a field."
@@ -82,7 +82,7 @@ export default function Page() {
             />
           </div>
         </div>
-        <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[25em] px-3">
+        <h2 className="theme-text-h5 md:theme-text-h4 mx-auto my-10 md:my-16 md:max-w-[25em] px-3 [text-align-last:center] text-justify">
           I believe all people deserve joy and fulfillment, but how to get those
           things isn’t always clear. Let me assist you in building the life you
           want to have. Not everything has to be suffering.

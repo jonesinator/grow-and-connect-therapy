@@ -6,7 +6,7 @@ interface MainHeaderProps {
 
 export default function MainHeader(props: MainHeaderProps) {
   return (
-    <section className="pt-[12em] pb-[20em] border-b border-theme-black bg-background-orange">
+    <section className="pt-[8em] md:pt-[10em] pb-[12em] md:pb-[22em] border-b border-theme-black bg-background-orange">
       <div className="w-full max-w-[100em] mx-auto px-4 md:px-6">
         <div className="flex items-center justify-center flex-col">
           <div className="z-[1]">
