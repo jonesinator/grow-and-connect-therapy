@@ -1,10 +1,6 @@
-import Image from "next/image";
-import type { StaticImageData } from "next/image";
 import Link from "next/link";
 
 import { Links } from "@lib/links";
-
-import bg_image from "./images/bg.svg";
 
 export default function MainFooter({ links }: { links: Links }) {
   return (
@@ -44,16 +40,7 @@ export default function MainFooter({ links }: { links: Links }) {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 m-0 p-0 bg-background-light w-full h-full z-[-1]">
-        <Image
-          src={bg_image as StaticImageData}
-          alt="Spray Painted Background"
-          className="mx-auto absolute bottom-0 hue-rotate-60 saturate-80 opacity-80"
-          sizes="100vw"
-          fill
-          quality={100}
-        />
-      </div>
+      <div className="absolute top-0 m-0 p-0 bg-background-orange w-full h-full z-[-1]"></div>
     </footer>
   );
 }

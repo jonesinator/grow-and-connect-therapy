@@ -1,5 +1,4 @@
 import Image from "next/image";
-import type { StaticImageData } from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import ReactFastMarquee from "react-fast-marquee";
@@ -17,11 +16,11 @@ import * as Accordion from "@radix-ui/react-accordion";
 import woman from "./images/woman.jpg";
 import man from "./images/man.jpg";
 import tree from "./images/tree.jpg";
-import hero_bg from "./images/hero-bg.svg";
 
 import expand_left from "./images/expand-left.jpg";
 import expand_middle from "./images/expand-middle.jpg";
 import expand_right from "./images/expand-right.jpg";
+import mountains_1 from "./images/mountains-1.jpg";
 
 import { cn } from "@lib/utils";
 
@@ -78,14 +77,7 @@ export default function Page() {
         <div className="mx-auto max-w-[100em]">
           <div className="mt-[-16.875em] mx-auto relative flex justify-center">
             <Image
-              src={hero_bg as StaticImageData}
-              alt="Spray Painted Background"
-              className="absolute bottom-[50%] md:bottom-[25%] hue-rotate-60 saturate-80 opacity-80"
-              style={{ height: "auto" }}
-              priority={true}
-            />
-            <Image
-              src={tree}
+              src={mountains_1}
               alt="Tree in a field."
               className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[40em]"
               priority={true}
@@ -106,7 +98,7 @@ export default function Page() {
 
       <div className="border-t border-b border-theme-black bg-background-orange pt-20">
         <div className="px-6 mx-auto max-w-[100rem]">
-          <div className="px-6 max-w-[540px]">
+          <div className="px-6 max-w-[540px] mb-10">
             <SlideHeader>
               <h2>Frequently Asked Questions</h2>
             </SlideHeader>
@@ -123,7 +115,7 @@ export default function Page() {
                 <Accordion.Header asChild>
                   <Accordion.Trigger asChild>
                     <div className="flex gap-[3rem]">
-                      <div className="theme-text-h4 text-green-100 font-mono">
+                      <div className="theme-text-h4 text-theme-white font-mono">
                         01
                       </div>
                       <h4>What therapy do you offer?</h4>
@@ -134,7 +126,7 @@ export default function Page() {
                   className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
                   asChild
                 >
-                  <p>
+                  <p className="text-justify">
                     We offer a range of therapy options tailored to individual
                     needs, including cognitive-behavioral therapy (CBT),
                     mindfulness-based therapy, and couples counseling. Our focus
@@ -151,7 +143,7 @@ export default function Page() {
                 <Accordion.Header asChild>
                   <Accordion.Trigger asChild>
                     <div className="flex gap-[3rem]">
-                      <div className="theme-text-h4 text-green-100 font-mono">
+                      <div className="theme-text-h4 text-theme-white font-mono">
                         02
                       </div>
                       <h4>How does the process work?</h4>
@@ -162,7 +154,7 @@ export default function Page() {
                   className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
                   asChild
                 >
-                  <p>
+                  <p className="text-justify">
                     We offer a range of therapy options tailored to individual
                     needs, including cognitive-behavioral therapy (CBT),
                     mindfulness-based therapy, and couples counseling. Our focus
@@ -179,7 +171,7 @@ export default function Page() {
                 <Accordion.Header asChild>
                   <Accordion.Trigger asChild>
                     <div className="flex gap-[3rem]">
-                      <div className="theme-text-h4 text-green-100 font-mono">
+                      <div className="theme-text-h4 text-theme-white font-mono">
                         03
                       </div>
                       <h4>Who are your typical clients?</h4>
@@ -190,7 +182,7 @@ export default function Page() {
                   className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
                   asChild={true}
                 >
-                  <p>
+                  <p className="text-justify">
                     We offer a range of therapy options tailored to individual
                     needs, including cognitive-behavioral therapy (CBT),
                     mindfulness-based therapy, and couples counseling. Our focus
@@ -207,7 +199,7 @@ export default function Page() {
                 <Accordion.Header asChild>
                   <Accordion.Trigger asChild>
                     <div className="flex gap-[3rem]">
-                      <div className="theme-text-h4 text-green-100 font-mono">
+                      <div className="theme-text-h4 text-theme-white font-mono">
                         04
                       </div>
                       <h4>How can I get started?</h4>
@@ -218,7 +210,7 @@ export default function Page() {
                   className="pt-8 overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down theme-text-large"
                   asChild
                 >
-                  <p>
+                  <p className="text-justify">
                     We offer a range of therapy options tailored to individual
                     needs, including cognitive-behavioral therapy (CBT),
                     mindfulness-based therapy, and couples counseling. Our focus
