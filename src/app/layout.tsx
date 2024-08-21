@@ -38,8 +38,8 @@ interface RootLayoutProps {
 export default function RootLayout(props: RootLayoutProps) {
   const navLinks: Links = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
     { name: "Specialties", path: "/specialties" },
+    { name: "Services", path: "/services" },
     { name: "Pricing", path: "/pricing" },
     { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
