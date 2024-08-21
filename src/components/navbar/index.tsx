@@ -65,7 +65,7 @@ export default function Navbar(props: NavbarProps) {
         <div className="border border-theme-black backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
           <Link
             href="/"
-            className="z-10 rounded-full h-12 w-12 absolute inset-x-0 p-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"
+            className="z-10 rounded-full h-16 w-16 absolute inset-x-0 p-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"
           >
             <Image
               src={logo_image as StaticImageData}
