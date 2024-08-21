@@ -40,7 +40,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       screens: {
-        md: "928px",
+        md: "1000px",
       },
     },
   },
