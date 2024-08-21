@@ -69,9 +69,6 @@ export default function Page() {
         <p className="theme-text-label mb-8">
           Affirming care for you &mdash; exactly as you are
         </p>
-        <Link href="/contact">
-          <ArrowButton>Get in Touch</ArrowButton>
-        </Link>
       </MainHeader>
 
       <section className="mb-20">
@@ -119,7 +116,7 @@ export default function Page() {
           <div className="mt-16 flex gap-6">
             <div className="relative w-[25%] min-w-[25%] h-[35rem] flex flex-col transition-all duration-500 hover:w-[80%]">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <p className="w-full theme-text-h3 text-white">All Accepted</p>
+                <p className="w-full theme-text-h3 text-white">Be Accepted</p>
               </div>
               <Image
                 src={expand_left}

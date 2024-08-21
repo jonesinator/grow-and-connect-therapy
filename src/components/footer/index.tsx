@@ -17,8 +17,18 @@ export default function MainFooter({ links }: { links: Links }) {
           <div className="theme-text-large basis-1/3 justify-self-center w-full">
             <p>
               I do not offer crisis services - if this is a mental health
-              emergency, please contact the Colorado Crisis Line at
-              844.493.8255.
+              emergency, please contact&nbsp;
+              <Link
+                href="https://coloradocrisisservices.org/"
+                className="underline"
+              >
+                Colorado Crisis Services
+              </Link>
+              &nbsp;at
+              <Link href="tel:18444938255" className="underline">
+                (844) 493-8255
+              </Link>
+              .
             </p>
             <br />
             <p>

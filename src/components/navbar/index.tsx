@@ -65,19 +65,19 @@ export default function Navbar(props: NavbarProps) {
         <div className="border border-theme-black backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
           <Link
             href="/"
-            className="z-10 rounded-full h-10 w-10 absolute inset-x-0 p-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"
+            className="z-10 rounded-full h-12 w-12 absolute inset-x-0 p-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"
           >
             <Image
               src={logo_image as StaticImageData}
               loading="lazy"
               alt="Logo Image"
-              className="h-full transition-all duration-500 hover:rotate-180"
+              className="h-full transition-all duration-1000 hover:rotate-[360deg]"
               style={{ width: "auto" }}
             />
           </Link>
           <nav
             role="navigation"
-            className={`z-10 border border-theme-black backdrop-blur-md bg-theme-white bg-opacity-50 mt-2 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em]" : "hidden"} md:block`}
+            className={`z-10 border border-theme-black backdrop-blur-md bg-theme-white bg-opacity-50 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em]" : "hidden"} md:block`}
           >
             {props.links.map((link) => {
               return (
@@ -94,7 +94,7 @@ export default function Navbar(props: NavbarProps) {
           </nav>
           <div className="justify-between w-full flex flex-row-reverse static items-center gap-3 md:absolute md:right-6">
             <Link href="/contact">
-              <ArrowButton variant="nav">Get in Touch</ArrowButton>
+              <ArrowButton variant="nav">Patient Portal</ArrowButton>
             </Link>
             <div className="block relative float-right text-2xl cursor-pointer select-none md:hidden ml-4">
               <Image
