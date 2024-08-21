@@ -15,7 +15,7 @@ export default function MainFooter({ links }: { links: Links }) {
             ))}
           </div>
           <div className="theme-text-large basis-1/3 justify-self-center w-full">
-            <p>
+            <p className="text-justify">
               I do not offer crisis services - if this is a mental health
               emergency, please contact&nbsp;
               <Link
@@ -31,7 +31,7 @@ export default function MainFooter({ links }: { links: Links }) {
               .
             </p>
             <br />
-            <p>
+            <p className="text-justify">
               This website is intended for a general audience, for educational
               and informational purposes only. The content is not a substitute
               for individual treatment by a qualified medical professional.
