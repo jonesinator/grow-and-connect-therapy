@@ -66,8 +66,11 @@ export default function Page() {
     <>
       <MainHeader>
         <SlideHeader>
-          <h1 className="mb-10">Grow &amp; Connect Therapy</h1>
+          <h1 className="theme-text-h2 mb-8">Grow &amp; Connect Therapy</h1>
         </SlideHeader>
+        <p className="theme-text-label mb-8">
+          Affirming care for you &mdash; exactly as you are
+        </p>
         <Link href="/contact">
           <ArrowButton>Get in Touch</ArrowButton>
         </Link>
@@ -79,14 +82,15 @@ export default function Page() {
             <Image
               src={mountains_1}
               alt="Tree in a field."
-              className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[40em]"
+              className="md:mx-6 object-cover object-left border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[60em]"
               priority={true}
             />
           </div>
         </div>
         <h2 className="theme-text-h4 mx-auto my-16 text-center md:max-w-[25em] px-3">
-          Welcome to Grow and Connect Therapy. My name is Jamie and I provide
-          teletherapy to adults across Colorado.
+          I believe all people deserve joy and fulfillment, but how to get those
+          things isn’t always clear. Let me assist you in building the life you
+          want to have. Not everything has to be suffering.
         </h2>
         <ReactFastMarquee autoFill={true} direction="left" className="pt-10">
           {makeMarquee(marquee_1)}
