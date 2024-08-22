@@ -34,7 +34,7 @@ export default function Page() {
     const Email: FC<z.infer<typeof EmailProps>> = (props) => (
       <div>
         <h1>Initial Contact</h1>
-        <p>Name: {props.email}</p>
+        <p>Name: {props.name}</p>
         <p>Phone: {props.phone}</p>
         <p>Email: {props.email}</p>
         <p>Message: {props.message}</p>
