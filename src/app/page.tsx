@@ -16,6 +16,8 @@ import expand_right from "./images/expand-right.jpg";
 import mountains_1 from "./images/mountains-1.jpg";
 import couple_in_snow from "./images/couple-in-snow.jpg";
 import man_with_dogs from "./images/man-with-dogs.jpg";
+import man_and_child from "./images/man-and-child.jpg";
+import man_and_woman_with_flowers from "./images/man-and-woman-with-flowers.jpg";
 import woman_with_laptop from "./images/woman-with-laptop.jpg";
 import jamie from "./images/jamie.jpg";
 
@@ -105,9 +107,10 @@ export default function Page() {
           </div>
         </div>
         <h2 className="theme-text-h5 md:theme-text-h4 mx-auto my-10 md:my-16 md:max-w-[25em] px-3 [text-align-last:center] text-justify">
-          I believe all people deserve joy and fulfillment, but how to get those
-          things isn’t always clear. Let me assist you in building the life you
-          want to have. Not everything has to be suffering.
+          Welcome to Grow and Connect Therapy! I know things seem hopeless and
+          chaotic right now, but they don’t have to be this way forever. Though
+          the step is hard, starting therapy is one of the best ways to
+          prioritize yourself.
         </h2>
         {makeMarquee(marquee_1, "left")}
         {makeMarquee(marquee_2, "right")}
@@ -117,10 +120,11 @@ export default function Page() {
         <div className="pb-16 md:pb-32 px-6 mx-auto max-w-[100rem]">
           <div className="px-6 max-w-[60em]">
             <SlideHeader>
-              <h2 className="">Find the Therapeutic Support You Need Today</h2>
+              <h2 className="">Find the Therapy Support You Need Today</h2>
             </SlideHeader>
             <p className="theme-text-large pt-6">
-              I want to help you make change in your life and relationships.
+              There’s no wrong time to seek help and it’s never too late to take
+              care of you.
             </p>
           </div>
           <div className="mt-16 flex gap-6">
@@ -150,53 +154,23 @@ export default function Page() {
             </div>
             <div className="relative w-[25%] min-w-[25%] h-[35rem] flex flex-col items-end transition-all duration-500 hover:w-[80%] drop-shadow-lg">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <p className="w-full theme-text-h3 text-white">Make Changes</p>
+                <p className="w-full theme-text-h3 text-white">
+                  Make Connection
+                </p>
               </div>
               <Image
                 src={expand_right}
                 alt=""
                 className="w-full h-full object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl"
               />
-              <h3 className="theme-text-h6 pt-4">Manage Your Moods</h3>
-              <p className="pt-2">Learn Mindfulness and Self-Compassion</p>
+              <h3 className="theme-text-h6 pt-4">
+                Mindful and Compassionate Therapy
+              </h3>
+              <p className="pt-2">Deepen Understanding of Yourself</p>
             </div>
           </div>
         </div>
       </div>
-
-      <Story image={jamie} alt="Man" colors="dark" borders="top">
-        <SlideHeader className="pt-6">
-          <h2>Grow In Yourself, Connect Your Relationships</h2>
-        </SlideHeader>
-        <p className="theme-text-label">Jamie L. Thompson, LCSW</p>
-        <p className="theme-text-large text-justify">
-          Finding a therapist isn’t just about finding someone that specializes
-          in your unique needs. It’s also important to find a therapist with
-          whom you connect and are able to be vulnerable. When you work with me,
-          I want you to feel safe and comfortable in the therapeutic
-          relationship in order to maximize the benefit you get from therapy. I
-          offer a free 15 minute consultation for us to briefly discuss your
-          needs and explore if I would be a good fit.
-        </p>
-        <Link href="/contact">
-          <ArrowButton>let's chat</ArrowButton>
-        </Link>
-      </Story>
-
-      <VideoBlock
-        videos={["/video/girl-in-field.webm", "/video/girl-in-field.mp4"]}
-        background="/video/girl-in-field.jpg"
-      >
-        <p className="theme-text-label text-white">Get relief</p>
-        <SlideHeader>
-          <h2 className="theme-text-h1 text-white my-10 text-center">
-            You Are So Worth It
-          </h2>
-        </SlideHeader>
-        <Link href="/contact">
-          <ArrowButton>reach out</ArrowButton>
-        </Link>
-      </VideoBlock>
 
       <PhotoCarousel
         colors="bright"
@@ -219,6 +193,16 @@ export default function Page() {
               alt="Man"
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
+            <Image
+              src={man_and_woman_with_flowers}
+              alt="Man"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
+            />
+            <Image
+              src={man_and_child}
+              alt="Man"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
+            />
           </>
         }
       >
@@ -226,16 +210,50 @@ export default function Page() {
           <h2>Prioritize Your Well-Being</h2>
         </SlideHeader>
         <p className="theme-text-large text-justify basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
-          Do you feel stuck but can’t figure out how to move forward? Like it
-          takes everything you have just to get through each day? Seem
-          disconnected from your loved ones? Racing and repetitive thoughts,
-          emotions that feel out of control or are so faint they’re
-          undetectable, the grief and pain of chronic illness are just some of
-          the things that can overwhelm you and make you think things will only
-          keep getting worse. It doesn’t have to be like this forever - start
-          prioritizing your mental health now!
+          Do you feel stuck, but can’t find a way forward when you look around?
+          Like it takes all that you have just to make it through each day? Are
+          you disconnected from your loved ones and wish things could be
+          different? Is your mind full of racing and repetitive thoughts that
+          demand your attention? Do you struggle to feel anything other than sad
+          and tired? Are you drowning in symptoms of chronic illness or pain and
+          feel like you are missing out on life? I would love to support and
+          assist you in your pursuit of mental wellness.
         </p>
       </PhotoCarousel>
+
+      <Story image={jamie} alt="Man" colors="dark" borders="top">
+        <SlideHeader className="pt-6">
+          <h2>Grow In Yourself, Connect With Your People</h2>
+        </SlideHeader>
+        <p className="theme-text-label">Jamie L. Thompson, LCSW</p>
+        <p className="theme-text-large text-justify">
+          Finding a therapist isn’t just about finding someone that specializes
+          in your unique needs. Equally important is finding a good connection
+          with a therapist with whom you can be vulnerable. I want you to feel
+          safe and comfortable in the therapeutic relationship so that you can
+          get the most out of our work together. I offer a free 15 minute
+          consultation for us to briefly discuss your needs and explore if we
+          are a good fit.
+        </p>
+        <Link href="/contact">
+          <ArrowButton>Let's Chat</ArrowButton>
+        </Link>
+      </Story>
+
+      <VideoBlock
+        videos={["/video/girl-in-field.webm", "/video/girl-in-field.mp4"]}
+        background="/video/girl-in-field.jpg"
+      >
+        <p className="theme-text-label text-white">Get relief</p>
+        <SlideHeader>
+          <h2 className="theme-text-h1 text-white my-10 text-center">
+            You Are So Worth It
+          </h2>
+        </SlideHeader>
+        <Link href="/contact">
+          <ArrowButton>Reach Out</ArrowButton>
+        </Link>
+      </VideoBlock>
 
       <div className="border-t border-theme-black bg-background-muddy pt-10 md:pt-20 pb-1">
         <div className="px-6 mx-auto max-w-[100rem]">

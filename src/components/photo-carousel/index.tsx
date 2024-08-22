@@ -53,10 +53,8 @@ export default function PhotoCarousel({
       <div className="relative flex overflow-x-hidden w-full max-h-[50em]">
         <div className="animate-marquee-left-1 whitespace-nowrap">
           {props.images}
-          {props.images}
         </div>
         <div className="animate-marquee-left-2 absolute top-0 whitespace-nowrap">
-          {props.images}
           {props.images}
         </div>
       </div>
