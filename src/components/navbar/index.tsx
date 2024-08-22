@@ -94,7 +94,7 @@ export default function Navbar(props: NavbarProps) {
           </nav>
           <div className="justify-between w-full flex flex-row-reverse static items-center gap-3 md:absolute md:right-6">
             <Link href="/contact">
-              <ArrowButton variant="nav">Patient Portal</ArrowButton>
+              <ArrowButton variant="nav">Client Portal</ArrowButton>
             </Link>
             <div className="block relative float-right text-2xl cursor-pointer select-none md:hidden ml-4">
               <Image

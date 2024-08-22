@@ -10,7 +10,7 @@ export default function MainFooter({ links }: { links: Links }) {
 
     const JoinNewsletterProps = z.object({ email: z.string().email() });
     const parsedFormData = JoinNewsletterProps.parse(
-      Object.fromEntries(formData.entries()),
+      Object.fromEntries(formData.entries())
     );
     const resend = new Resend(process.env["RESEND_API_KEY"]);
     const response = await resend.contacts.create({
@@ -94,7 +94,7 @@ export default function MainFooter({ links }: { links: Links }) {
                 id="email"
                 name="email"
                 placeholder="Email"
-                className="mr-[1em] bg-transparent placeholder:italic placeholder:theme-text-regular placeholder:text-theme-black focus:outline-none focus:border-theme-white border-b border-black focus:placeholder:text-theme-white"
+                className="mr-[1em] bg-transparent placeholder:theme-text-regular placeholder:text-theme-black focus:outline-none focus:border-theme-white border-b border-black focus:placeholder:text-theme-white"
               />
               <button type="submit">
                 <svg
