@@ -10,7 +10,7 @@ export default function MainFooter({ links }: { links: Links }) {
 
     const JoinNewsletterProps = z.object({ email: z.string().email() });
     const parsedFormData = JoinNewsletterProps.parse(
-      Object.fromEntries(formData.entries())
+      Object.fromEntries(formData.entries()),
     );
     const resend = new Resend(process.env["RESEND_API_KEY"]);
     const response = await resend.contacts.create({

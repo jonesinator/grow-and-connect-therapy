@@ -28,7 +28,7 @@ export default function Page() {
     });
 
     const parsedFormData = EmailProps.parse(
-      Object.fromEntries(formData.entries())
+      Object.fromEntries(formData.entries()),
     );
 
     const Email: FC<z.infer<typeof EmailProps>> = (props) => (
