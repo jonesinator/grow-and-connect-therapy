@@ -27,15 +27,15 @@ export default function MainFooter({ links }: { links: Links }) {
   return (
     <footer className="relative border-t border-theme-black pt-10 md:pt-20 pb-20 overflow-hidden">
       <div className="w-full px-4 mx-auto md:max-w-[45em] lg:max-w-[100em]">
-        <div className="flex flex-col gap-10 relative md:flex-row justify-self-start">
-          <div className="flex flex-col items-start theme-text-h4 basis-1/3">
+        <div className="flex flex-col gap-10 relative xl:flex-row justify-self-start">
+          <div className="flex flex-col items-start theme-text-h4 basis-1/4">
             {links.map((link) => (
               <Link key={link.name} href={link.path}>
                 {link.name}
               </Link>
             ))}
           </div>
-          <div className="theme-text-large basis-1/3 justify-self-center w-full">
+          <div className="theme-text-large basis-1/4 justify-self-center w-full">
             <p className="text-justify">
               I do not offer crisis services - if this is a mental health
               emergency, please contact&nbsp;
@@ -60,39 +60,9 @@ export default function MainFooter({ links }: { links: Links }) {
               therapist/ patient relationship between visitors and Jamie L
               Thompson, LCSW or Grow and Connect Therapy.
             </p>
-            <div>
-              <p className="pt-4 theme-text-h5">Join my newsletter</p>
-              {/* eslint-disable-next-line */}
-              <form action={subscribeNewsletter} className="pt-4">
-                <input
-                  required
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  className="mr-[1em] bg-transparent placeholder:italic placeholder:theme-text-regular placeholder:text-theme-black focus:outline-none focus:border-theme-white border-b border-black focus:placeholder:text-theme-white"
-                />
-                <button type="submit">
-                  <svg
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    aria-label=""
-                    className="w-3.5 h-3.5 ml-[-1em]"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </button>
-              </form>
-            </div>
           </div>
-          <div className="gap-4 flex flex-col md:flex-row md:gap-10 theme-text-large basis-1/3">
-            <ul className="flex flex-col theme-text-large w-full text-left md:text-right">
+          <div className="gap-4 flex flex-col md:flex-row md:gap-10 theme-text-large basis-1/4">
+            <ul className="flex flex-col theme-text-large w-full text-left xl:text-right">
               <li>
                 <a href="mailto:jamie@growandconnecttherapy.com">
                   jamie@growandconnecttherapy.com
@@ -112,6 +82,36 @@ export default function MainFooter({ links }: { links: Links }) {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="text-left xl:text-right">
+            <p className="theme-text-h5">Join my newsletter</p>
+            {/* eslint-disable-next-line */}
+            <form action={subscribeNewsletter} className="pt-4">
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                className="mr-[1em] bg-transparent placeholder:italic placeholder:theme-text-regular placeholder:text-theme-black focus:outline-none focus:border-theme-white border-b border-black focus:placeholder:text-theme-white"
+              />
+              <button type="submit">
+                <svg
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  aria-label=""
+                  className="w-3.5 h-3.5 ml-[-1em]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div className="mt-16 sm:mt-20 md:mt-24">
