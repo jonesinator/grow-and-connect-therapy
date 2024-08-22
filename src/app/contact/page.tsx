@@ -108,7 +108,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[40em] mx-4">
+        <div className="mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[50em] mx-4">
           <h2 className="theme-text-h4 mb-8">Send me a message</h2>
           {/* eslint-disable-next-line */}
           <form action={sendEmail}>
