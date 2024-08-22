@@ -1,8 +1,29 @@
 import Link from "next/link";
+import { Resend } from "resend";
+import { z } from "zod";
 
 import { Links } from "@lib/links";
 
 export default function MainFooter({ links }: { links: Links }) {
+  async function subscribeNewsletter(formData: FormData) {
+    "use server";
+
+    const JoinNewsletterProps = z.object({ email: z.string().email() });
+    const parsedFormData = JoinNewsletterProps.parse(
+      Object.fromEntries(formData.entries()),
+    );
+    const resend = new Resend(process.env["RESEND_API_KEY"]);
+    const response = await resend.contacts.create({
+      email: parsedFormData.email,
+      audienceId: "d269f2b7-61cc-466c-b330-9fc9deec867a",
+    });
+    if (response.error) {
+      return { errors: response.error };
+    } else {
+      return { success: true };
+    }
+  }
+
   return (
     <footer className="relative border-t border-theme-black pt-10 md:pt-20 pb-20 overflow-hidden">
       <div className="w-full px-4 mx-auto md:max-w-[45em] lg:max-w-[100em]">
@@ -39,6 +60,36 @@ export default function MainFooter({ links }: { links: Links }) {
               therapist/ patient relationship between visitors and Jamie L
               Thompson, LCSW or Grow and Connect Therapy.
             </p>
+            <div>
+              <p className="pt-4 theme-text-h5">Join my newsletter</p>
+              {/* eslint-disable-next-line */}
+              <form action={subscribeNewsletter} className="pt-4">
+                <input
+                  required
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  className="mr-[1em] bg-transparent placeholder:italic placeholder:theme-text-regular placeholder:text-theme-black focus:outline-none focus:border-theme-white border-b border-black focus:placeholder:text-theme-white"
+                />
+                <button type="submit">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    aria-label=""
+                    className="w-3.5 h-3.5 ml-[-1em]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
           <div className="gap-4 flex flex-col md:flex-row md:gap-10 theme-text-large basis-1/3">
             <ul className="flex flex-col theme-text-large w-full text-left md:text-right">
