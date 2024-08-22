@@ -15,6 +15,7 @@ export default function MainFooter({ links }: { links: Links }) {
     const resend = new Resend(process.env["RESEND_API_KEY"]);
     const response = await resend.contacts.create({
       email: parsedFormData.email,
+      unsubscribed: false,
       audienceId: "d269f2b7-61cc-466c-b330-9fc9deec867a",
     });
     if (response.error) {
