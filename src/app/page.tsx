@@ -207,17 +207,17 @@ export default function Page() {
             <Image
               src={woman_with_laptop}
               alt="Tree"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={couple_in_snow}
               alt="Woman"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={man_with_dogs}
               alt="Man"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
           </>
         }
