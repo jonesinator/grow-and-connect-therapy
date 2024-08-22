@@ -95,11 +95,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col gap-y-2">
               <h3 className="theme-text-regular">Address</h3>
-              <p>
-                1942 Broadway St STE 314C
-                <br />
-                Boulder, CO 80020
-              </p>
+              <p>Denver, Colorado</p>
             </div>
           </div>
           <div className="flex flex-row place-items-center gap-6">
@@ -113,7 +109,7 @@ export default function Page() {
           </div>
         </div>
         <div className="mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[40em] mx-4">
-          <h2 className="theme-text-h4 mb-8">Send us a message</h2>
+          <h2 className="theme-text-h4 mb-8">Send me a message</h2>
           {/* eslint-disable-next-line */}
           <form action={sendEmail}>
             <input
