@@ -24,7 +24,7 @@ export default function Page() {
       phone: z.string(),
       email: z.string().email(),
       message: z.string(),
-      acknowledgement: z.boolean(),
+      acknowledgement: z.string(),
     });
 
     const parsedFormData = EmailProps.parse(
@@ -38,10 +38,7 @@ export default function Page() {
         <p>Phone: {props.phone}</p>
         <p>Email: {props.email}</p>
         <p>Message: {props.message}</p>
-        <p>
-          Acknowledgement:&nbsp;
-          {props.acknowledgement ? "checked" : "!!!NOT CHECKED!!!"}
-        </p>
+        <p>Acknowledgement: {props.acknowledgement}</p>
       </div>
     );
 
