@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-import ReactFastMarquee from "react-fast-marquee";
 import * as Accordion from "@radix-ui/react-accordion";
 
 import MainHeader from "@components/main-header";
@@ -42,21 +41,44 @@ export default function Page() {
     { className: "bg-indigo-200", contents: "Therapy" },
   ];
 
-  const makeMarquee = (marqueeProps: MarqueeProps): ReactNode => {
-    return (
+  const makeMarquee = (
+    marqueeProps: MarqueeProps,
+    direction: "left" | "right",
+  ): ReactNode => {
+    const marqueeList = (
       <ul>
-        {marqueeProps.map((item) => (
-          <li
-            key={item.contents}
-            className={cn(
-              "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block drop-shadow-md md:drop-shadow-lg",
-              item.className,
-            )}
-          >
-            {item.contents}
-          </li>
-        ))}
+        {Array.from({ length: 2 }).map(() =>
+          marqueeProps.map((item) => (
+            <li
+              key={item.contents}
+              className={cn(
+                "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block drop-shadow-md md:drop-shadow-lg",
+                item.className,
+              )}
+            >
+              {item.contents}
+            </li>
+          )),
+        )}
       </ul>
+    );
+
+    const animate_1 =
+      direction === "left"
+        ? "animate-marquee-left-1"
+        : "animate-marquee-right-1";
+    const animate_2 =
+      direction === "left"
+        ? "animate-marquee-left-2"
+        : "animate-marquee-right-2";
+
+    return (
+      <div className="relative flex overflow-x-hidden">
+        <div className={`${animate_1} whitespace-nowrap`}>{marqueeList}</div>
+        <div className={`${animate_2} absolute top-0 whitespace-nowrap`}>
+          {marqueeList}
+        </div>
+      </div>
     );
   };
 
@@ -87,20 +109,8 @@ export default function Page() {
           things isn’t always clear. Let me assist you in building the life you
           want to have. Not everything has to be suffering.
         </h2>
-        <ReactFastMarquee
-          autoFill={true}
-          direction="left"
-          className="pt-0 md:pt-10"
-        >
-          {makeMarquee(marquee_1)}
-        </ReactFastMarquee>
-        <ReactFastMarquee
-          autoFill={true}
-          direction="right"
-          className="pb-0 md:pb-10"
-        >
-          {makeMarquee(marquee_2)}
-        </ReactFastMarquee>
+        {makeMarquee(marquee_1, "left")}
+        {makeMarquee(marquee_2, "right")}
       </section>
 
       <div className="border-t border-theme-black bg-background-orange pt-16 md:pt-32">
@@ -192,23 +202,22 @@ export default function Page() {
         colors="bright"
         carouselPosition="top"
         borders="none"
-        direction="right"
         images={
           <>
             <Image
               src={woman_with_laptop}
               alt="Tree"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
             />
             <Image
               src={couple_in_snow}
               alt="Woman"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
             />
             <Image
               src={man_with_dogs}
               alt="Man"
-              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3"
+              className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 inline-block"
             />
           </>
         }

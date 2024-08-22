@@ -1,6 +1,5 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ReactNode } from "react";
-import ReactFastMarquee, { MarqueeProps } from "react-fast-marquee";
 
 import Section, { type SectionVariants } from "@components/section";
 
@@ -22,8 +21,7 @@ const photoCarouselVariants = cva(
 );
 
 type PhotoCarouselProps = VariantProps<typeof photoCarouselVariants> &
-  SectionVariants &
-  MarqueeProps & {
+  SectionVariants & {
     children: ReactNode;
     images: ReactNode;
     className?: string;
@@ -52,9 +50,16 @@ export default function PhotoCarousel({
       >
         {props.children}
       </div>
-      <ReactFastMarquee {...props} autoFill={true}>
-        {props.images}
-      </ReactFastMarquee>
+      <div className="relative flex overflow-x-hidden w-full max-h-[50em]">
+        <div className="animate-marquee-left-1 whitespace-nowrap">
+          {props.images}
+          {props.images}
+        </div>
+        <div className="animate-marquee-left-2 absolute top-0 whitespace-nowrap">
+          {props.images}
+          {props.images}
+        </div>
+      </div>
     </Section>
   );
 }
