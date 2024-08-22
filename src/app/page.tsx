@@ -168,7 +168,9 @@ export default function Page() {
           offer a free 15 minute consultation for us to briefly discuss your
           needs and explore if I would be a good fit.
         </p>
-        <ArrowButton>let's chat</ArrowButton>
+        <Link href="/contact">
+          <ArrowButton>let's chat</ArrowButton>
+        </Link>
       </Story>
 
       <VideoBlock
@@ -181,7 +183,9 @@ export default function Page() {
             You Are So Worth It
           </h2>
         </SlideHeader>
-        <ArrowButton>reach out</ArrowButton>
+        <Link href="/contact">
+          <ArrowButton>reach out</ArrowButton>
+        </Link>
       </VideoBlock>
 
       <PhotoCarousel
