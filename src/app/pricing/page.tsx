@@ -35,7 +35,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">
-              <p className="theme-text-h2 mb-2">$165</p>
+              <p className="theme-text-h3 mb-2">$165</p>
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
@@ -59,7 +59,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">
-              <p className="theme-text-h2 mb-2">$220-$330</p>
+              <p className="theme-text-h3 mb-2">$220-$330</p>
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
@@ -82,7 +82,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">
-              <p className="theme-text-h2 mb-2">$220</p>
+              <p className="theme-text-h3 mb-2">$220</p>
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
