@@ -137,9 +137,7 @@ export default function Page() {
                 alt=""
                 className="w-full h-full object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
               />
-              <h3 className="theme-text-h6 pt-4">
-                Open and Affirming Therapy?
-              </h3>
+              <h3 className="theme-text-h6 pt-4">Open and Affirming Therapy</h3>
               <p className="pt-2">Empathetic and Validating Care</p>
             </div>
             <div className="relative w-[50%] h-[35rem] flex flex-col items-center drop-shadow-lg">
