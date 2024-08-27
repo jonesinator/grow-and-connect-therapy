@@ -43,7 +43,7 @@ export default function RootLayout(props: RootLayoutProps) {
     { name: "Pricing", path: "/pricing" },
     { name: "Resources", path: "/resources" },
     { name: "About Me", path: "/about-me" },
-    { name: "Contact", path: "/contact" },
+    // { name: "Contact", path: "/contact" },
   ];
 
   return (
