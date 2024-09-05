@@ -39,9 +39,8 @@ export default function Pricing() {
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
-              Individual therapy with me consists of one 45 minute session on a
-              weekly or biweekly basis, after completion of an intake
-              appointment.
+              Individual sessions are 45 minutes long (CPT code 90834), ongoing
+              scheduling offered at end of intake appointment
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
@@ -59,14 +58,13 @@ export default function Pricing() {
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">
-              <p className="theme-text-h3 mb-2">$220-$330</p>
+              <p className="theme-text-h3 mb-2">$200</p>
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
-              Couples or relationship therapy with me is one session on a weekly
-              or biweekly basis. I offer two different options for length of
-              sessions - 60 or 90 minute sessions. That choice is discussed
-              during the intake appointment.
+              60 minute sessions (CPT codes 90846 or 90847), ongoing scheduling
+              offered at end of intake appointment, longer appointments
+              available if needed
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
@@ -82,13 +80,12 @@ export default function Pricing() {
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">
-              <p className="theme-text-h3 mb-2">$220</p>
+              <p className="theme-text-h3 mb-2">$200</p>
               <p>per session</p>
             </div>
             <p className="mx-6 grow">
-              Treatment begins with one 60 minute intake appointment, during
-              which time we review policies and goals. This is the same length
-              for both individual and couples therapy.
+              60 minute session (CPT code 90791), same for individual or
+              couples/relationship therapy
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
@@ -98,7 +95,16 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-[55em] mb-10 px-4">
+      <div className="mx-8 mb-10 md:mx-auto py-6 border-y border-theme-white max-w-[60em]">
+        <p className="theme-text-label text-justify">
+          Please note that I am out of network for all insurance providers. This
+          means that I do not accept your insurance, but I will provide you with
+          super bills that you can use to seek reimbursement from your insurance
+          provider. Further note that if you are covered under Colorado
+          Medicaid, I cannot see you even as an out of network provider.
+        </p>
+      </div>
+      <div className="mx-auto max-w-[55em] mb-10 px-4 text-justify">
         <h2 className="text-center mb-4">Good Faith Estimate</h2>
         <p className="mb-2">
           Under Section 2799B-6 of the Public Health Service Act, health care
