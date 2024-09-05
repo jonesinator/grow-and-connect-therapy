@@ -56,7 +56,9 @@ export default function Pricing() {
         </Marquee>
       </div>
       <Story image={woman_window} alt="foo" imagePosition="right" colors="dark">
-        <h3>Anxiety, Depression, Out of Control Emotions</h3>
+        <h2 className="theme-text-h3">
+          Anxiety, Depression, Out of Control Emotions
+        </h2>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
           People aren’t born knowing what to do when we experience overwhelming,
           uncomfortable emotions. We learn through observation of others or
@@ -86,7 +88,7 @@ export default function Pricing() {
         </ArrowButton>
       </Story>
       <Story image={medical} alt="foo" imagePosition="left">
-        <h3 className="self-start">Chronic Illness</h3>
+        <h2 className="theme-text-h3 self-start">Chronic Illness</h2>
         <p className="text-justify">
           I am a therapist with firsthand experience of the ups and downs (and
           downs and downs and downs) of chronic illness and pain. I know what it
@@ -116,7 +118,9 @@ export default function Pricing() {
         imagePosition="right"
         colors="bright"
       >
-        <h3>Relationship/Couples Therapy</h3>
+        <h2 className="theme-text-h3 self-start">
+          Relationship/Couples Therapy
+        </h2>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
           “Relationships take work” said almost every couples therapist, life
           coach or relationships expert ever. But how do we know what type of
@@ -183,7 +187,7 @@ export default function Pricing() {
             <Image
               src={woman_dog_bench}
               alt="Tree"
-              className="h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg w-[30em] object-cover"
+              className="h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg w-[15em] md:w-[20em] object-cover"
             />
             <Image
               src={walking_dog}

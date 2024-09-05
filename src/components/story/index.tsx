@@ -62,11 +62,11 @@ export default function Story({
           className,
         )}
       >
-        <div className="basis-1/2 flex justify-center place-items-center mx-0 md:mx-3">
+        <div className="basis-1/2 flex justify-center place-items-center mx-0 md:mx-3 w-full">
           <Image
             alt={props.alt}
             src={props.image}
-            className="h-[25em] md:h-auto md:h-max-[50em] md:w-[30em] md:rounded-b-2xl md:rounded-t-[20em] md:aspect-[1.33/2] border-b md:border border-theme-black object-cover md:mx-3 md:drop-shadow-lg"
+            className="w-full h-[25em] md:h-auto md:h-max-[50em] md:w-[30em] md:rounded-b-2xl md:rounded-t-[20em] md:aspect-[1.33/2] border-b md:border border-theme-black object-cover md:mx-3 md:drop-shadow-lg"
           />
         </div>
         <div className="basis-1/2 mx-3 mt-3 md:mt-0">
