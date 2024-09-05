@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .theme-text-huge {
+    @apply font-mono font-normal text-[5rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] tracking-[-.03rem] leading-[82%];
+  }
+
   .theme-text-h1 {
     @apply font-mono font-normal text-[4rem] sm:text-[5rem] md:text-[6.875rem] lg:text-[8.5rem] tracking-[-.03rem] leading-[82%];
   }
