@@ -266,6 +266,7 @@ export default function Page() {
             <Accordion.Root
               type="multiple"
               className="border-t border-theme-black mb-10"
+              defaultValue={["item-1"]}
             >
               <Accordion.Item
                 value="item-1"
