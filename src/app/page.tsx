@@ -110,8 +110,8 @@ export default function Page() {
               <h2 className="">Find the Therapy Support You Need Today</h2>
             </SlideHeader>
             <p className="theme-text-large pt-6">
-              There’s no wrong time to seek help and it’s never too late to take
-              care of you.
+              There’s no wrong time to seek help and it’s never too late to
+              start.
             </p>
           </div>
           <div className="mt-16 flex gap-6">
@@ -151,7 +151,7 @@ export default function Page() {
                 className="h-[30rem] object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl"
               />
               <h3 className="theme-text-h6 pt-4">
-                Mindful and Compassionate Therapy
+                Mindful and Supportive Therapy
               </h3>
               <p className="pt-2">Deepen Understanding of Yourself</p>
             </div>
