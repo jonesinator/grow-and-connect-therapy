@@ -6,7 +6,7 @@ import { cn } from "@lib/utils";
 const sectionVariants = cva("pb-10 md:py-20 flex place-items-center gap-10", {
   variants: {
     colors: {
-      bright: "bg-background-white text-black",
+      bright: "bg-theme-white text-black",
       light: "bg-background-light text-black",
       dark: "bg-background-muddy text-black",
     },
