@@ -56,9 +56,11 @@ export default function Pricing() {
         </Marquee>
       </div>
       <Story image={woman_window} alt="foo" imagePosition="right" colors="dark">
-        <h2 className="theme-text-h3">
-          Anxiety, Depression, Out of Control Emotions
-        </h2>
+        <SlideHeader>
+          <h2 className="theme-text-h3">
+            Anxiety, Depression, Out of Control Emotions
+          </h2>
+        </SlideHeader>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
           People aren’t born knowing what to do when we experience overwhelming,
           uncomfortable emotions. We learn through observation of others or
@@ -88,7 +90,9 @@ export default function Pricing() {
         </ArrowButton>
       </Story>
       <Story image={medical} alt="foo" imagePosition="left">
-        <h2 className="theme-text-h3 self-start">Chronic Illness</h2>
+        <SlideHeader>
+          <h2 className="theme-text-h3 self-start">Chronic Illness</h2>
+        </SlideHeader>
         <p className="text-justify">
           I am a therapist with firsthand experience of the ups and downs (and
           downs and downs and downs) of chronic illness and pain. I know what it
@@ -118,9 +122,11 @@ export default function Pricing() {
         imagePosition="right"
         colors="bright"
       >
-        <h2 className="theme-text-h3 self-start">
-          Relationship/Couples Therapy
-        </h2>
+        <SlideHeader>
+          <h2 className="theme-text-h3 self-start">
+            Relationship/Couples Therapy
+          </h2>
+        </SlideHeader>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
           “Relationships take work” said almost every couples therapist, life
           coach or relationships expert ever. But how do we know what type of
@@ -197,7 +203,7 @@ export default function Pricing() {
           </>
         }
       >
-        <SlideHeader className="basis-1/2 flex justify-center max-w-[40em] mx-3 overflow-visible">
+        <SlideHeader className="basis-1/2 flex justify-center max-w-[40em] mx-3">
           <h3>High Needs Dog Owners</h3>
         </SlideHeader>
         <div className="text-justify basis-1/2 mx-4 max-w-[50em] flex flex-col gap-6">
