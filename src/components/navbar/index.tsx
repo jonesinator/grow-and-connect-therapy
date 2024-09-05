@@ -62,7 +62,7 @@ export default function Navbar(props: NavbarProps) {
       <div
         className={`pt-10 bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both ${menuState.open ? "" : ""}`}
       >
-        <div className="border border-theme-black backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
+        <div className="border border-theme-black before:backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
           <Link
             href="/"
             className="p-2 z-10 rounded-full h-16 w-16 absolute inset-x-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"

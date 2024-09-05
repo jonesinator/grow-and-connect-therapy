@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
+import Marquee from "react-fast-marquee";
 
 import MainHeader from "@components/main-header";
 import SlideHeader from "@components/slide-header";
@@ -49,38 +50,24 @@ export default function Page() {
   ): ReactNode => {
     const marqueeList = (
       <ul>
-        {Array.from({ length: 2 }).map(() =>
-          marqueeProps.map((item) => (
-            <li
-              key={item.contents}
-              className={cn(
-                "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block drop-shadow-md md:drop-shadow-lg",
-                item.className,
-              )}
-            >
-              {item.contents}
-            </li>
-          )),
-        )}
+        {marqueeProps.map((item) => (
+          <li
+            key={item.contents}
+            className={cn(
+              "text-gray-600 rounded-full px-4 py-2 mx-1 my-1.5 md:px-8 md:py-4 md:mx-2 md:my-3 theme-text-h3 inline-block drop-shadow-md md:drop-shadow-lg",
+              item.className,
+            )}
+          >
+            {item.contents}
+          </li>
+        ))}
       </ul>
     );
 
-    const animate_1 =
-      direction === "left"
-        ? "animate-marquee-left-1"
-        : "animate-marquee-right-1";
-    const animate_2 =
-      direction === "left"
-        ? "animate-marquee-left-2"
-        : "animate-marquee-right-2";
-
     return (
-      <div className="relative flex overflow-x-hidden">
-        <div className={`${animate_1} whitespace-nowrap`}>{marqueeList}</div>
-        <div className={`${animate_2} absolute top-0 whitespace-nowrap`}>
-          {marqueeList}
-        </div>
-      </div>
+      <Marquee autoFill direction={direction}>
+        {marqueeList}
+      </Marquee>
     );
   };
 
