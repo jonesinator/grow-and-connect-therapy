@@ -77,7 +77,7 @@ export default function Navbar(props: NavbarProps) {
           </Link>
           <nav
             role="navigation"
-            className={`md:backdrop-blur-md border border-theme-black bg-theme-white bg-opacity-50 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em] backdrop-blur-md mt-4" : "hidden"} md:block`}
+            className={`z-10 md:backdrop-blur-md border border-theme-black bg-theme-white bg-opacity-50 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em] backdrop-blur-md mt-4" : "hidden"} md:block`}
           >
             {props.links.map((link) => {
               return (
