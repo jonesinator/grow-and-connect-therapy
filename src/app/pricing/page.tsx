@@ -95,16 +95,17 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <div className="mx-8 mb-10 md:mx-auto py-6 border-y border-theme-white max-w-[60em]">
-        <p className="theme-text-label text-justify">
-          Please note that I am out of network for all insurance providers. This
-          means that I do not accept your insurance, but I will provide you with
-          super bills that you can use to seek reimbursement from your insurance
-          provider. Further note that if you are covered under Colorado
-          Medicaid, I cannot see you even as an out of network provider.
-        </p>
-      </div>
       <div className="mx-auto max-w-[55em] mb-10 px-4 text-justify">
+        <div className="mb-10 md:mx-auto py-8 border-y border-theme-white">
+          <p className="text-justify">
+            Please note that I am out of network for all insurance providers.
+            This means that I do not accept your insurance, but I will provide
+            you with super bills that you can use to seek reimbursement from
+            your insurance provider. Further note that if you are covered under
+            Colorado Medicaid, I cannot see you even as an out of network
+            provider.
+          </p>
+        </div>
         <h2 className="text-center mb-4">Good Faith Estimate</h2>
         <p className="mb-2">
           Under Section 2799B-6 of the Public Health Service Act, health care
