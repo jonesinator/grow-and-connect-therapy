@@ -40,7 +40,7 @@ export default function Pricing() {
             </div>
             <p className="mx-6 grow">
               Individual sessions are 45 minutes long (CPT code 90834), ongoing
-              scheduling offered at end of intake appointment
+              scheduling offered at end of intake appointment.
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
@@ -64,7 +64,7 @@ export default function Pricing() {
             <p className="mx-6 grow">
               60 minute sessions (CPT codes 90846 or 90847), ongoing scheduling
               offered at end of intake appointment, longer appointments
-              available if needed
+              available if needed.
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
@@ -85,7 +85,7 @@ export default function Pricing() {
             </div>
             <p className="mx-6 grow">
               60 minute session (CPT code 90791), same for individual or
-              couples/relationship therapy
+              couples/relationship therapy.
             </p>
             <div className="mt-8 mb-4 mx-4">
               <Link href="/contact">
