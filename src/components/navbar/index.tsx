@@ -27,7 +27,7 @@ interface MenuState {
 
 export default function Navbar(props: NavbarProps) {
   const pathname = usePathname();
-  const menuShouldShow = useMediaQuery("(max-width: 928px)");
+  const menuShouldShow = useMediaQuery("(max-width: 1000px)");
   const commonClassNames = "rounded-[2em] px-4";
   const closedMenuState: MenuState = {
     open: false,
@@ -59,10 +59,10 @@ export default function Navbar(props: NavbarProps) {
 
   return (
     <div className="z-10 gap-6 flex-col flex fixed top-0 right-0 left-0 bottom-auto theme-text-regular">
-      <div
-        className={`pt-10 bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both ${menuState.open ? "" : ""}`}
-      >
-        <div className="border border-theme-black before:backdrop-blur-md text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent">
+      <div className="pt-10 bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both">
+        <div
+          className={`border border-theme-black text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent ${menuState.open ? "bg-opacity-90" : "backdrop-blur-md"}`}
+        >
           <Link
             href="/"
             className="p-2 z-10 rounded-full h-16 w-16 absolute inset-x-0 mx-auto md:mx-0 md:p-1 md:left-6 md:backdrop-blur-md md:bg-theme-white md:bg-opacity-50"
@@ -77,7 +77,7 @@ export default function Navbar(props: NavbarProps) {
           </Link>
           <nav
             role="navigation"
-            className={`z-10 border border-theme-black backdrop-blur-md bg-theme-white bg-opacity-50 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em]" : "hidden"} md:block`}
+            className={`md:backdrop-blur-md border border-theme-black bg-theme-white bg-opacity-50 px-0 py-10 md:gap-1 rounded-[2em] md:border-none md:items-center md:p-1 md:flex ${menuState.open ? "absolute top-full inset-x-0 text-center overflow-visible min-w-[12em] backdrop-blur-md mt-4" : "hidden"} md:block`}
           >
             {props.links.map((link) => {
               return (
