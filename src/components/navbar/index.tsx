@@ -93,7 +93,7 @@ export default function Navbar(props: NavbarProps) {
             })}
           </nav>
           <div className="justify-between w-full flex flex-row-reverse static items-center gap-3 md:absolute md:right-6">
-            <Link href="/contact">
+            <Link href="https://growandconnecttherapy.clientsecure.me">
               <ArrowButton variant="nav">Client Portal</ArrowButton>
             </Link>
             <div className="block relative float-right text-2xl cursor-pointer select-none md:hidden ml-4">
