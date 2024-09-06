@@ -10,6 +10,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import ArrowButton from "@components/arrow-button";
+import SlideHeader from "@components/slide-header";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -63,7 +64,9 @@ export default function Page() {
       <div className="py-10 px-4 flex mx-auto max-w-[100em] flex-col md:flex-row">
         <div className="flex flex-col gap-y-4 max-w-[30em] mx-4">
           <h1 className="theme-text-label">Contact</h1>
-          <h2 className="theme-text-h1 py-8">Get In Touch</h2>
+          <SlideHeader>
+            <h2 className="theme-text-h1 py-8">Get In Touch</h2>
+          </SlideHeader>
           <div className="flex flex-row place-items-center gap-6">
             <div className="p-4 rounded-full border border-theme-black bg-background-orange">
               <EnvelopeIcon className="size-8" />
