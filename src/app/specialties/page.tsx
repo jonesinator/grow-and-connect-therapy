@@ -90,8 +90,8 @@ export default function Pricing() {
         </ArrowButton>
       </Story>
       <Story image={medical} alt="foo" imagePosition="left">
-        <SlideHeader>
-          <h2 className="theme-text-h3 self-start">Chronic Illness</h2>
+        <SlideHeader className="self-start">
+          <h2 className="theme-text-h3">Chronic Illness</h2>
         </SlideHeader>
         <p className="text-justify">
           I am a therapist with firsthand experience of the ups and downs (and
@@ -113,7 +113,7 @@ export default function Pricing() {
           and downs.
         </p>
         <ArrowButton className="self-start">
-          <Link href="/contact">What Text?</Link>
+          <Link href="/contact">Reach Out</Link>
         </ArrowButton>
       </Story>
       <Story
