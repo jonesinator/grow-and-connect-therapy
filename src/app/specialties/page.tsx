@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
@@ -8,7 +8,6 @@ import PhotoCarousel from "@components/photo-carousel";
 import SlideHeader from "@components/slide-header";
 import Story from "@components/story";
 
-import hero_bg from "./images/hero-bg.svg";
 import couple_holding_hands from "./images/couple-holding-hands.jpg";
 import medical from "./images/medical.jpg";
 import woman_window from "./images/woman-window.jpg";
@@ -31,9 +30,6 @@ export default function Specialties() {
     <>
       <div className="py-20 w-full bg-theme-white"></div>
       <div className="overflow-hidden text-center w-full h-full bg-theme-white pb-20">
-        <div className="top-20 sm:top-10 md:top-0 absolute hue-rotate-[115deg] opacity-45 left-[25%]">
-          <Image src={hero_bg as StaticImageData} alt="Man" />
-        </div>
         <SlideHeader className="pt-2 pb-8 md:pt-8 md:pb-20">
           <h1 className="theme-text-huge">Specialty Areas</h1>
         </SlideHeader>
