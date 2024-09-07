@@ -93,22 +93,22 @@ export default function MainFooter({ links }: { links: Links }) {
             </form>
             <ul className="flex flex-col theme-text-large w-full text-left xl:text-right mt-12">
               <li>
-                <a href="mailto:jamie@growandconnecttherapy.com">
+                <Link href="mailto:jamie@growandconnecttherapy.com">
                   jamie@growandconnecttherapy.com
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="tel:17205045388">(720) 504-5388</a>
+                <Link href="tel:17205045388">(720) 504-5388</Link>
               </li>
               <li>
-                <a href="https://www.instagram.com/growandconnect_therapy/">
+                <Link href="https://www.instagram.com/growandconnect_therapy/">
                   Instagram
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.facebook.com/profile.php?id=61564946903297">
+                <Link href="https://www.facebook.com/profile.php?id=61564946903297">
                   Facebook
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
