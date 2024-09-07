@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import Marquee from "react-fast-marquee";
 
-import MainHeader from "@components/main-header";
 import SlideHeader from "@components/slide-header";
 import ArrowButton from "@components/arrow-button";
 import Story from "@components/story";
@@ -73,14 +72,24 @@ export default function Page() {
 
   return (
     <>
-      <MainHeader>
-        <SlideHeader>
-          <h1 className="theme-text-h2 mb-8">Grow &amp; Connect Therapy</h1>
-        </SlideHeader>
-        <p className="theme-text-label">
-          Affirming care for you &mdash; exactly as you are
-        </p>
-      </MainHeader>
+      <section className="pt-[8em] md:pt-[10em] pb-[12em] md:pb-[19em] border-b border-theme-black bg-gradient-to-t from-background-orange to-background-orange via-theme-white">
+        <div className="w-full max-w-[100em] mx-auto px-4 md:px-6">
+          <div className="flex items-center justify-center flex-col">
+            <div className="z-[1]">
+              <div className="max-w-[75em] text-center flex items-center justify-center flex-col">
+                <SlideHeader>
+                  <h1 className="theme-text-h2 mb-8">
+                    Grow &amp; Connect Therapy
+                  </h1>
+                </SlideHeader>
+                <p className="theme-text-label">
+                  Affirming care for you &mdash; exactly as you are
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="mb-10 md:mb-20">
         <div className="mx-auto max-w-[100em]">

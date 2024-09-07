@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import MainHeader from "@components/main-header";
 import SlideHeader from "@components/slide-header";
 
 export const metadata: Metadata = {
@@ -9,10 +8,13 @@ export const metadata: Metadata = {
 
 export default function AboutMe() {
   return (
-    <MainHeader>
-      <SlideHeader>
-        <h1>About Me</h1>
-      </SlideHeader>
-    </MainHeader>
+    <>
+      <div className="py-20 w-full"></div>
+      <div className="overflow-hidden text-center w-full h-full pb-4">
+        <SlideHeader>
+          <h1>About Me</h1>
+        </SlideHeader>
+      </div>
+    </>
   );
 }
