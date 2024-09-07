@@ -271,6 +271,9 @@ export default function Specialties() {
             through the struggle, isolation, and frequent judgment that comes
             with loving a high needs pet.
           </p>
+          <ArrowButton className="place-self-start">
+            <Link href="/contact">Find Help</Link>
+          </ArrowButton>
         </div>
       </PhotoCarousel>
     </>
