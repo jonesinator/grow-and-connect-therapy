@@ -75,7 +75,7 @@ export default function Specialties() {
           />
         </Marquee>
         <p
-          className="theme-text-h6 max-w-[50em] mx-auto mt-12 text-justify"
+          className="theme-text-h6 max-w-[50em] mx-auto mt-12 text-justify px-8"
           style={{ textAlignLast: "center" }}
         >
           I’m committed to providing safe, affirming, and unbiased therapy to
