@@ -16,16 +16,21 @@ import woman_with_dogs from "./images/woman-with-dogs.jpg";
 import woman_dog_bench from "./images/woman-dog-bench.jpg";
 import dog_man_sit_dock from "./images/dog-man-sit-dock.jpg";
 import walking_dog from "./images/walking-dog.jpg";
+import hand_grass from "./images/hand-grass.jpg";
+import man_reading from "./images/man-reading.jpg";
+import woman_ocean from "./images/woman-ocean.jpg";
+import dog_muzzle from "./images/dog-muzzle.jpg";
+import dog_woods from "./images/dog-woods.jpg";
 
 export const metadata: Metadata = {
   title: "Specialties",
 };
 
-export default function Pricing() {
+export default function Specialties() {
   return (
     <>
       <div className="py-20 w-full bg-theme-white"></div>
-      <div className="overflow-hidden text-center w-full h-full bg-theme-white pb-40">
+      <div className="overflow-hidden text-center w-full h-full bg-theme-white pb-20">
         <div className="top-20 sm:top-10 md:top-0 absolute hue-rotate-[115deg] opacity-45 left-[25%]">
           <Image src={hero_bg as StaticImageData} alt="Man" />
         </div>
@@ -36,24 +41,49 @@ export default function Pricing() {
           <Image
             src={couple_holding_hands}
             alt="Tree"
-            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[25em]"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={medical}
             alt="Woman"
-            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[25em]"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={woman_window}
             alt="Man"
-            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[25em]"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={woman_with_dogs}
             alt="Man"
-            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[25em]"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
+          />
+          <Image
+            src={hand_grass}
+            alt="Man"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
+          />
+          <Image
+            src={man_reading}
+            alt="Man"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
+          />
+          <Image
+            src={woman_ocean}
+            alt="Man"
+            className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[15em]"
           />
         </Marquee>
+        <p
+          className="theme-text-h6 max-w-[50em] mx-auto mt-12 text-justify"
+          style={{ textAlignLast: "center" }}
+        >
+          I’m committed to providing safe, affirming, and unbiased therapy to
+          all identities and bodies. If you are polyamorous, feminist, fat, into
+          kink, or in the LGBTQIA+ community, I want you in particular to know
+          that I am an open and nonjudgmental therapist. Everyone deserves
+          access to quality care.
+        </p>
       </div>
       <Story image={woman_window} alt="foo" imagePosition="right" colors="dark">
         <SlideHeader>
@@ -200,6 +230,16 @@ export default function Pricing() {
               alt="Tree"
               className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
             />
+            <Image
+              src={dog_muzzle}
+              alt="Tree"
+              className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
+            />
+            <Image
+              src={dog_woods}
+              alt="Tree"
+              className="h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover w-[20em]"
+            />
           </>
         }
       >
@@ -208,27 +248,28 @@ export default function Pricing() {
         </SlideHeader>
         <div className="text-justify basis-1/2 mx-4 max-w-[50em] flex flex-col gap-6">
           <p>
-            Not all people have experienced the isolation and anxiety that it is
-            to love a behaviorally or medically needy dog. It’s becoming
-            increasingly popular to bring your dogs with you wherever you can
-            and it can be so painful knowing that you and your dog may never be
-            able to have those experiences, play with other dogs, or meet
-            strangers without fear. Being a responsible and loving dog owner
-            ends up taking far more effort and sacrifice than we ever
-            anticipated and can have significant impacts on your own mental
-            health. The isolation, stress, and often financial cost can
-            significantly increase depression and anxiety in your day-to-day
-            life.
+            Not all pet owners know the isolation and anxiety that it is to love
+            a behaviorally or medically needy animal. It’s become popular,
+            especially in Colorado, to bring your beloved dog with you wherever
+            you can and it’s so painful to know that you may never be able to
+            have those experiences with your pet. Or that your dog may never
+            play with other dogs, meet strangers without fear, or easily attend
+            vet appointments. Being a responsible and loving pet owner ends up
+            taking far more effort and sacrifice than we ever anticipated and
+            can have a significant impact on our own mental health. The effort
+            to engage in what we think should be normal, easy activities and
+            often the financial cost can increase depression and anxiety in our
+            day-to-day lives.
           </p>
           <p>
-            I know exactly what it is to choose to stay home, to have to sedate
-            my pet due to his fear, to not have dog friends that can visit
-            freely. I know how much effort it can take to manage behaviors and
-            medical needs that limit your choices for both your life and your
-            pet. While I <em>am not</em> a dog trainer and do not offer training
-            services for your pet, I can support you through the struggle,
-            isolation, and frequent judgment that comes with loving a reactive
-            pet.
+            I know exactly what it is to have to leave my dog at home, to have
+            to medicate him due to fear, to not have dog friends or even human
+            friends that can visit freely. I know how much it can take to manage
+            behaviors and medical needs that limit your choices for both your
+            life and the life of your pet. I <b>am not</b> a dog trainer and do
+            not offer training services for your pet, but I can support you
+            through the struggle, isolation, and frequent judgment that comes
+            with loving a high needs pet.
           </p>
         </div>
       </PhotoCarousel>
