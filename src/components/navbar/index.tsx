@@ -58,7 +58,7 @@ export default function Navbar(props: NavbarProps) {
   }, [menuShouldShow, menuState.open]);
 
   return (
-    <div className="z-10 gap-6 flex-col flex fixed top-0 right-0 left-0 bottom-auto theme-text-regular">
+    <header className="z-10 gap-6 flex-col flex fixed top-0 right-0 left-0 bottom-auto theme-text-regular">
       <div className="pt-10 bg-transparent before:table after:table before:col-start-1 after:col-start-1 before:row-start-1 after:row-start-1 before:column-end-2 after:column-end-2 before:row-end-2 after:row-end-2 after:clear-both">
         <div
           className={`border border-theme-black text-center bg-theme-white bg-opacity-50 rounded-full p-2 gap-4 justify-center items-center w-[94%] max-w-[100em] mx-auto flex relative md:border-none md:backdrop-blur-none md:bg-transparent ${menuState.open ? "bg-opacity-90" : "backdrop-blur-md"}`}
@@ -113,6 +113,6 @@ export default function Navbar(props: NavbarProps) {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

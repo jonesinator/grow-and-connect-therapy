@@ -50,7 +50,7 @@ export default function RootLayout(props: RootLayoutProps) {
     <html lang="en" className={`${staatliches.variable} ${manrope.variable}`}>
       <body className="font-sans bg-background-light text-theme-black flex flex-col min-h-screen">
         <Navbar links={navLinks} />
-        <div className="flex-grow">{props.children}</div>
+        <main className="flex-grow">{props.children}</main>
         <Footer links={navLinks} />
       </body>
     </html>
