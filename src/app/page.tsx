@@ -83,9 +83,8 @@ export default function Page() {
                   </h1>
                 </SlideHeader>
                 <p className="theme-text-label">
-                  <span className="theme-text-h5 leading-none">“</span>We have
-                  more possibilities available in each moment than we realize.
-                  <span className="theme-text-h5 leading-none">„</span>
+                  “We have more possibilities available in each moment than we
+                  realize.”
                 </p>
                 <p className="italic theme-text-label ml-auto mr-10 md:mr-40">
                   - Thich Nhat Hanh
