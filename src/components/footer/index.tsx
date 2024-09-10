@@ -26,7 +26,7 @@ export default function MainFooter({ links }: { links: Links }) {
   }
 
   return (
-    <footer className="relative border-t border-theme-black pt-10 md:pt-20 pb-20 overflow-hidden">
+    <footer className="relative border-t border-theme-black pt-10 md:pt-20 pb-20 overflow-hidden bg-gradient-to-t from-theme-white to-background-orange">
       <div className="w-full px-4 mx-auto md:max-w-[45em] lg:max-w-[100em]">
         <div className="flex flex-col gap-10 xl:gap-40 relative xl:flex-row justify-self-start">
           <div className="flex flex-col items-start theme-text-h4">
@@ -130,7 +130,6 @@ export default function MainFooter({ links }: { links: Links }) {
           </div>
         </div>
       </div>
-      <div className="absolute top-0 m-0 p-0 bg-background-orange w-full h-full z-[-1]"></div>
     </footer>
   );
 }
