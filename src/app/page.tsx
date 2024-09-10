@@ -127,8 +127,8 @@ export default function Page() {
               start.
             </p>
           </div>
-          <div className="mt-16 flex gap-6">
-            <div className="relative w-[25%] flex flex-col transition-all duration-500 hover:w-[50%] drop-shadow-lg">
+          <div className="mt-16 flex flex-col md:flex-row gap-y-12 md:gap-6 place-items-center">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] flex flex-col transition-all duration-500 hover:md:w-[50%] drop-shadow-lg">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <p className="w-full theme-text-h3 text-white">Be Accepted</p>
               </div>
@@ -140,7 +140,7 @@ export default function Page() {
               <h3 className="theme-text-h6 pt-4">Open and Affirming Therapy</h3>
               <p className="pt-2">Empathetic and Validating Care</p>
             </div>
-            <div className="relative w-[50%] flex flex-col items-center drop-shadow-lg">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[50%] flex flex-col items-center drop-shadow-lg">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <p className="w-full theme-text-h3 text-white">Meet Online</p>
               </div>
@@ -152,7 +152,7 @@ export default function Page() {
               <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
               <p className="pt-2">Meet from the comfort of your home</p>
             </div>
-            <div className="relative w-[25%] min-w-[25%] flex flex-col items-end transition-all duration-500 hover:w-[50%] drop-shadow-lg">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] md:min-w-[25%] flex flex-col items-end transition-all duration-500 md:hover:w-[50%] drop-shadow-lg">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <p className="w-full theme-text-h3 text-white">Make Changes</p>
               </div>
