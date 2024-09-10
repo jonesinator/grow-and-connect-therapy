@@ -11,6 +11,7 @@ import woman_with_dog from "./images/woman-with-dog.jpg";
 import icon_1 from "./images/icon-1.png";
 import icon_2 from "./images/icon-2.png";
 import icon_3 from "./images/icon-3.png";
+import icon_4 from "./images/icon-4.png";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -52,15 +53,15 @@ export default function Services() {
               and even when traveling in state.
             </p>
           </div>
-          <div className="mt-16 flex gap-6">
-            <div className="relative w-[25%] flex flex-col drop-shadow-lg">
+          <div className="mt-16 flex flex-col md:flex-row gap-y-12 md:gap-6 place-items-center md:place-items-start md:order-0">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] flex flex-col drop-shadow-lg">
               <Image
                 src={man_coffee}
                 alt=""
                 className="w-full h-[30rem] object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
               />
             </div>
-            <div className="relative w-[50%] flex flex-col items-center drop-shadow-lg">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[50%] flex flex-col items-center drop-shadow-lg order-last md:order-1">
               <div className="absolute flex w-full h-full text-center items-center">
                 <p className="w-full theme-text-h3 text-white">Meet Online</p>
               </div>
@@ -72,7 +73,7 @@ export default function Services() {
               <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
               <p className="pt-2">Easy and Secure</p>
             </div>
-            <div className="relative w-[25%] min-w-[25%] flex flex-col items-end transition-all duration-500 drop-shadow-lg">
+            <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] md:min-w-[25%] flex flex-col items-end transition-all duration-500 drop-shadow-lg md:order-2">
               <Image
                 src={woman_with_dog}
                 alt=""
@@ -150,21 +151,21 @@ export default function Services() {
               </div>
               <div className="flex flex-row place-items-center gap-6 pb-8">
                 <div className="self-start">
-                  <Image src={icon_3} alt="foo" />
+                  <Image src={icon_4} alt="foo" />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <h3 className="theme-text-h5">Gottman Method</h3>
                   <p className="text-justify">
-                    Mindfulness and self-compassion strategies are helpful in
-                    therapy because they promote emotional regulation,
-                    self-acceptance, and overall mental well-being. These
-                    approaches encourage individuals to develop a healthier
-                    relationship with their thoughts and emotions, reducing
-                    stress and increasing resilience. Overall, mindfulness and
-                    self-compassion in therapy help individuals develop
-                    healthier coping mechanisms, enhance emotional regulation,
-                    and create a more supportive, balanced internal dialogue,
-                    leading to improved mental health and well-being.
+                    The Gottman Approach to couples therapy is helpful because
+                    it provides research-based strategies to improve
+                    communication, resolve conflicts, and strengthen the
+                    emotional connection between partners. This approach focuses
+                    on building healthy relationship habits and addressing areas
+                    of distress in a structured and practical way. Overall, the
+                    Gottman Approach helps couples create a more resilient,
+                    loving partnership by improving communication, managing
+                    conflict, and enhancing emotional intimacy, all grounded in
+                    scientific research.
                   </p>
                 </div>
               </div>
