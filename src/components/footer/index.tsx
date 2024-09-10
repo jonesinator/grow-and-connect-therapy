@@ -118,8 +118,11 @@ export default function MainFooter({ links }: { links: Links }) {
             Grow &amp; Connect
           </p>
           <div className="gap-4 flex-col mt-5 md:mt-0 md:gap-10 md:flex-row text-center justify-between items-center flex">
-            <Link href="/privacy" className="theme-text-label">
+            <Link href="/privacy-policy" className="theme-text-label">
               Privacy Policy
+            </Link>
+            <Link href="/privacy-practices" className="theme-text-label">
+              Privacy Practices
             </Link>
             <Link href="/terms" className="theme-text-label">
               Terms and Conditions
