@@ -44,7 +44,9 @@ export default function AboutMe() {
         </p>
       </Story>
       <Story image={jamie_2} alt="foo" imagePosition="right" colors="bright">
-        <h2 className="theme-text-h2">Jamie L Thompson, LCSW</h2>
+        <SlideHeader>
+          <h2 className="theme-text-h2">Jamie L Thompson, LCSW</h2>
+        </SlideHeader>
         <p className="text-justify">
           I’m a Licensed Clinical Social Worker in the state of Colorado. I
           graduated with my Masters of Social Work from Wichita State University
