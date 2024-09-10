@@ -97,7 +97,7 @@ export default function Page() {
               <BuildingOffice2Icon className="size-8" />
             </div>
             <div className="flex flex-col gap-y-2">
-              <h3 className="theme-text-regular">Address</h3>
+              <h3 className="theme-text-regular">Location</h3>
               <p>Denver, Colorado</p>
             </div>
           </div>
