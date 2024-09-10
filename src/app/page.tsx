@@ -83,7 +83,12 @@ export default function Page() {
                   </h1>
                 </SlideHeader>
                 <p className="theme-text-label">
-                  Affirming care for you &mdash; exactly as you are
+                  <span className="theme-text-h5 leading-none">“</span>We have
+                  more possibilities available in each moment than we realize.
+                  <span className="theme-text-h5 leading-none">„</span>
+                </p>
+                <p className="italic theme-text-label ml-auto mr-10 md:mr-40">
+                  - Thich Nhat Hanh
                 </p>
               </div>
             </div>
@@ -150,9 +155,7 @@ export default function Page() {
             </div>
             <div className="relative w-[25%] min-w-[25%] flex flex-col items-end transition-all duration-500 hover:w-[50%] drop-shadow-lg">
               <div className="absolute flex w-full h-full text-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                <p className="w-full theme-text-h3 text-white">
-                  Make Connection
-                </p>
+                <p className="w-full theme-text-h3 text-white">Make Changes</p>
               </div>
               <Image
                 src={expand_right}
