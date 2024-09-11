@@ -14,6 +14,7 @@ const arrowButtonVariants = cva(
         default:
           "bg-theme-black text-theme-white hover:bg-background-orange hover:text-theme-black",
         nav: "text-theme-black bg-transparent hover:bg-transparent underline md:bg-theme-black md:hover:bg-background-orange md:hover:text-theme-black md:hover:transition-colors md:text-theme-white md:rounded-full md:no-underline",
+        disabled: "bg-theme-black text-theme-white",
       },
     },
     defaultVariants: {
@@ -38,10 +39,10 @@ const ArrowButton: FC<ArrowButtonProps> = ({
   };
 
   return (
-    <motion.button
+    <motion.div
       initial="hidden"
       animate="hidden"
-      whileHover="visible"
+      whileHover={variant === "disabled" ? "hidden" : "visible"}
       className={`justify-center flex gap-0.5 py-2 ${cn(arrowButtonVariants({ variant, className }))}`}
     >
       {children}
@@ -59,7 +60,7 @@ const ArrowButton: FC<ArrowButtonProps> = ({
           d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
         />
       </motion.svg>
-    </motion.button>
+    </motion.div>
   );
 };
 
