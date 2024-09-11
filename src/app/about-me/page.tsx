@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 import SlideHeader from "@components/slide-header";
 
-import jamie_1 from "./images/jamie-1.webp";
-import jamie_2 from "./images/jamie-2.webp";
+import jamie_1 from "./images/jamie-1.jpg";
+import jamie_2 from "./images/jamie-2.jpg";
 import Story from "@components/story";
 import Link from "next/link";
 
