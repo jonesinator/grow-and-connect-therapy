@@ -48,13 +48,6 @@ export default function AboutMe() {
           <h2 className="theme-text-h2">Jamie L Thompson, LCSW</h2>
         </SlideHeader>
         <p className="text-justify">
-          I’m a Licensed Clinical Social Worker in the state of Colorado. I
-          graduated with my Masters of Social Work from Wichita State University
-          in 2012 and earned my clinical qualification in 2018. I’ve always
-          focused on adults with a variety of mental and behavioral health
-          experiences in my work.
-        </p>
-        <p className="text-justify">
           I grew up in Kansas where I completed my Masters of Social Work at
           Wichita State University in 2012. I’ve lived in Colorado since 2015,
           and completed my clinical qualification in 2018. I currently live with
