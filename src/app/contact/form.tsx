@@ -45,6 +45,7 @@ function FormButton({ state }: { state: SendEmailResponse }) {
 
 export default function ContactForm() {
   const [sendEmailState, sendEmailAction] = useFormState(sendEmail, null);
+  const done = sendEmailState?.success === true;
 
   return (
     <>
@@ -99,7 +100,9 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[50em] mx-4">
+        <div
+          className={`mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[50em] mx-4 ${done ? "hidden" : ""}`}
+        >
           <h2 className="theme-text-h4 mb-8">Send me a message</h2>
           {/* eslint-disable-next-line */}
           <form action={sendEmailAction}>
@@ -152,6 +155,12 @@ export default function ContactForm() {
             </div>
             <FormButton state={sendEmailState} />
           </form>
+        </div>
+        <div
+          className={`mr-auto md:mr-0 md:ml-auto rounded-3xl border border-theme-black p-12 my-10 md:my-0 max-w-[50em] w-full mx-4 ${done ? "" : "hidden"}`}
+        >
+          <h2 className="theme-text-h4 mb-8 w-full">Thanks!</h2>
+          <p>I'll be in touch soon.</p>
         </div>
       </div>
     </>
