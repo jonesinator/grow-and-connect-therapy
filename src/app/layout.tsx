@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     template: "%s | Grow and Connect Therapy",
     default: "Grow and Connect Therapy",
   },
-  description: "SOMETHING HERE",
+  description:
+    "Explore empathetic and nonjudgmental psychotherapy with Jamie L. Thompson, LCSW.",
 };
 
 interface RootLayoutProps {
