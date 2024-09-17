@@ -36,37 +36,37 @@ export default function Specialties() {
         <Marquee autoFill>
           <Image
             src={couple_holding_hands}
-            alt="Tree"
+            alt="Two people sitting at a table, gently holding hands in an intimate moment. Mugs of coffee are on the table, and soft natural light streams in from a nearby window, creating a peaceful and tender atmosphere."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={medical}
-            alt="Woman"
+            alt="A person sitting on a hospital bed wearing a blue medical gown, holding a disposable blue cap in their hands. The scene suggests a quiet, reflective moment before or after a medical procedure."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={woman_window}
-            alt="Man"
+            alt="A young woman rests her head on her hand while gazing through window blinds. The dim lighting and her contemplative expression evoke a sense of introspection or quiet reflection."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={woman_with_dogs}
-            alt="Man"
+            alt="A woman stands by a calm lake in a forest, accompanied by two dogs. The sunlight filters through the trees, creating a serene and peaceful outdoor setting."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={hand_grass}
-            alt="Man"
+            alt="A single hand is raised above tall grass in a vast field, with cloudy skies in the background. The image evokes a sense of reaching out or seeking in an expansive, natural setting."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={man_reading}
-            alt="Man"
+            alt="A man sits on a bench in a grassy area near the water, absorbed in reading a book. The sunlight creates a warm, peaceful atmosphere, with nature and the open sky in the background."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[20em]"
           />
           <Image
             src={woman_ocean}
-            alt="Man"
+            alt="A person stands near the edge of a grassy cliff overlooking the ocean at sunset, with their back turned and hands behind them holding a small bouquet of flowers. The calm water and soft light create a peaceful, reflective mood."
             className="rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover h-[20em] md:h-[20em] w-[15em]"
           />
         </Marquee>
@@ -81,7 +81,12 @@ export default function Specialties() {
           access to quality care.
         </p>
       </div>
-      <Story image={woman_window} alt="foo" imagePosition="right" colors="dark">
+      <Story
+        image={woman_window}
+        alt="A young woman rests her head on her hand while gazing through window blinds. The dim lighting and her contemplative expression evoke a sense of introspection or quiet reflection."
+        imagePosition="right"
+        colors="dark"
+      >
         <SlideHeader>
           <h2 className="theme-text-h3">
             Anxiety, Depression, Out of Control Emotions
@@ -115,7 +120,11 @@ export default function Specialties() {
           <Link href="/contact">Get Support</Link>
         </ArrowButton>
       </Story>
-      <Story image={medical} alt="foo" imagePosition="left">
+      <Story
+        image={medical}
+        alt="A person sitting on a hospital bed wearing a blue medical gown, holding a disposable blue cap in their hands. The scene suggests a quiet, reflective moment before or after a medical procedure."
+        imagePosition="left"
+      >
         <SlideHeader className="self-start">
           <h2 className="theme-text-h3">Chronic Illness</h2>
         </SlideHeader>
@@ -144,7 +153,7 @@ export default function Specialties() {
       </Story>
       <Story
         image={couple_holding_hands}
-        alt="foo"
+        alt="Two people sitting at a table, gently holding hands in an intimate moment. Mugs of coffee are on the table, and soft natural light streams in from a nearby window, creating a peaceful and tender atmosphere."
         imagePosition="right"
         colors="bright"
       >
@@ -208,32 +217,32 @@ export default function Specialties() {
           <>
             <Image
               src={woman_with_dogs}
-              alt="Tree"
+              alt="A woman stands by a calm lake in a forest, accompanied by two dogs. The sunlight filters through the trees, creating a serene and peaceful outdoor setting."
               className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
             />
             <Image
               src={dog_man_sit_dock}
-              alt="Tree"
+              alt="A man and a dog sit side by side at the end of a wooden dock, overlooking a calm lake surrounded by trees. The peaceful setting conveys a sense of companionship and quiet reflection."
               className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
             />
             <Image
               src={woman_dog_bench}
-              alt="Tree"
+              alt="A woman with tattoos sits on a tree stump in a lush outdoor setting, smiling as she shakes hands with a black dog. The scene is playful and full of warmth, surrounded by greenery."
               className="h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg w-[15em] md:w-[20em] object-cover"
             />
             <Image
               src={walking_dog}
-              alt="Tree"
+              alt="A person walks their dog along a tree-lined path covered with autumn leaves. The vibrant fall colors and peaceful atmosphere create a serene outdoor scene."
               className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
             />
             <Image
               src={dog_muzzle}
-              alt="Tree"
+              alt="A man holds a large dog wearing a muzzle, with a calm expression on his face. The outdoor setting includes a building in the background, and the moment appears quiet and reflective."
               className="w-auto h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover"
             />
             <Image
               src={dog_woods}
-              alt="Tree"
+              alt="A person stands in a forest with a dog wearing a muzzle, both looking ahead. The person is dressed in outdoor gear, including a backpack and a beanie, suggesting they are on a hike through the tall trees of the woods."
               className="h-[12em] md:h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg object-cover w-[20em]"
             />
           </>

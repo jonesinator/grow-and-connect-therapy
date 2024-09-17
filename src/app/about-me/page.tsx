@@ -15,7 +15,11 @@ export default function AboutMe() {
   return (
     <>
       <div className="py-16 border-b border-theme-black md:border-none md:py-10 w-full"></div>
-      <Story image={jamie_1} alt="foo" borders="none">
+      <Story
+        image={jamie_1}
+        alt="Jamie is kneeling outdoors by a tree with a calm, gray and white dog by her side. She has long, reddish-brown hair and glasses, wearing a casual black outfit with a green cover-up, smiling warmly."
+        borders="none"
+      >
         <SlideHeader className="text-left">
           <h1 className="theme-text-h2">Thoughts on Therapy</h1>
         </SlideHeader>
@@ -43,7 +47,12 @@ export default function AboutMe() {
           those goals in a way that validates your life and your values.
         </p>
       </Story>
-      <Story image={jamie_2} alt="foo" imagePosition="right" colors="bright">
+      <Story
+        image={jamie_2}
+        alt="Jamie is smiling warmly while sitting indoors, with long reddish-brown hair and glasses. The background features plants and stained glass, adding to the cozy, welcoming atmosphere."
+        imagePosition="right"
+        colors="bright"
+      >
         <SlideHeader>
           <h2 className="theme-text-h2">Jamie L Thompson, LCSW</h2>
         </SlideHeader>

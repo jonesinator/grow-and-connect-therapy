@@ -24,7 +24,7 @@ export default function Services() {
         <div className="absolute w-full h-full 2xl:top-[-15em]">
           <Image
             src={hero}
-            alt="Woman on Laptop"
+            alt="A person sitting on an orange couch with decorative pillows, working on a laptop in a sunlit room. They are wearing a denim jacket and glasses, surrounded by a warm and cozy atmosphere with soft lighting."
             className="w-full min-h-[30em] sm:min-h-[40em] md:min-h-[52em] object-cover"
           />
         </div>
@@ -57,7 +57,7 @@ export default function Services() {
             <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] flex flex-col drop-shadow-lg">
               <Image
                 src={man_coffee}
-                alt=""
+                alt="A man sitting on a couch wrapped in a blanket, holding a coffee mug, and smiling while waving at a laptop screen in a cozy, plant-filled room. A lit candle sits on a nearby table, adding to the warm, relaxed atmosphere."
                 className="w-full h-[30rem] object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
               />
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
               </div>
               <Image
                 src={woman_couch}
-                alt=""
+                alt="A woman sitting on a vintage-style mustard yellow couch, working on a laptop in a cozy room with exposed brick walls and modern art. A lamp and coffee table with a plant and magazine complete the warm, stylish setting."
                 className="w-full h-[30rem] object-cover border border-theme-black rounded-full"
               />
               <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
@@ -76,7 +76,7 @@ export default function Services() {
             <div className="relative max-w-[35rem] md:max-w-none md:w-[25%] md:min-w-[25%] flex flex-col items-end transition-all duration-500 drop-shadow-lg md:order-2">
               <Image
                 src={woman_with_dog}
-                alt=""
+                alt="A woman sitting on a couch with a laptop on her lap, wearing headphones, and holding her dog close. The wall behind her is decorated with various framed artwork, creating a cozy and personal atmosphere."
                 className="h-[30rem] object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl object-bottom"
               />
             </div>
@@ -88,7 +88,7 @@ export default function Services() {
             <div className="basis-1/2 flex flex-col gap-y-4 max-w-[50em] mx-4">
               <div className="flex flex-row place-items-center gap-6 border-b pb-8 border-theme-black">
                 <div className="self-start">
-                  <Image src={icon_1} alt="foo" />
+                  <Image src={icon_1} alt="" />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <h3 className="theme-text-h5">
@@ -109,7 +109,7 @@ export default function Services() {
               </div>
               <div className="flex flex-row place-items-center gap-6 border-b pb-8 border-theme-black">
                 <div className="self-start">
-                  <Image src={icon_2} alt="foo" />
+                  <Image src={icon_2} alt="" />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <h3 className="theme-text-h5">Cognitive Behavior Therapy</h3>
@@ -129,7 +129,7 @@ export default function Services() {
               </div>
               <div className="flex flex-row place-items-center gap-6 border-b pb-8 border-theme-black">
                 <div className="self-start">
-                  <Image src={icon_3} alt="foo" />
+                  <Image src={icon_3} alt="" />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <h3 className="theme-text-h5">
@@ -151,7 +151,7 @@ export default function Services() {
               </div>
               <div className="flex flex-row place-items-center gap-6 pb-8">
                 <div className="self-start">
-                  <Image src={icon_4} alt="foo" />
+                  <Image src={icon_4} alt="" />
                 </div>
                 <div className="flex flex-col gap-y-2">
                   <h3 className="theme-text-h5">Gottman Method</h3>
@@ -173,7 +173,7 @@ export default function Services() {
             <div className="sm:self-center md:self-auto drop-shadow-lg md:max-h-[50em] mt-20 md:mt-0">
               <Image
                 src={dwarf}
-                alt=""
+                alt="A garden gnome with a red hat and white beard is sitting in a meditative pose, surrounded by blooming lavender and greenery, creating a peaceful and whimsical scene."
                 className="h-full object-cover md:object-center border border-theme-black rounded-tl-xl md:rounded-tl-3xl rounded-tr-[5em] md:rounded-tr-[10em] rounded-bl-[5em] md:rounded-bl-[10em] rounded-br-xl md:rounded-br-3xl"
               />
             </div>
