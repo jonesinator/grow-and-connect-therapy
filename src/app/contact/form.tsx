@@ -20,7 +20,12 @@ function FormButton({ state }: { state: SendEmailResponse }) {
 
   return (
     <>
-      <button type="submit" className="my-2" disabled={done}>
+      <button
+        type="submit"
+        className="my-2"
+        disabled={done}
+        aria-label="Send Message"
+      >
         <ArrowButton
           className={sendEmailPending ? "animate-pulse" : ""}
           variant={done ? "disabled" : "default"}

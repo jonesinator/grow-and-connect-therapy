@@ -13,7 +13,7 @@ function FormButton({ state }: { state: SubscribeResponse }) {
   const done = subscribePending || state !== null;
 
   return (
-    <button type="submit" disabled={done}>
+    <button type="submit" disabled={done} aria-label="Sign Up">
       {subscribePending ? (
         <Image
           src={spinner as StaticImageData}
