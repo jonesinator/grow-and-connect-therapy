@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Manrope, Staatliches } from "next/font/google";
 
 import Footer from "@components/footer";
@@ -53,6 +54,7 @@ export default function RootLayout(props: RootLayoutProps) {
         <main className="flex-grow">{props.children}</main>
         <Footer links={navLinks} />
       </body>
+      <GoogleAnalytics gaId="G-ZGVF6X6SN7" />
     </html>
   );
 }
