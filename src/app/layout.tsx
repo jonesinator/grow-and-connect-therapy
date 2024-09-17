@@ -27,8 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Grow and Connect Therapy",
     default: "Grow and Connect Therapy",
   },
-  description:
-    "Providing DBT and CBT-based therapy in Colorado to people from all walks of life.",
+  description: "SOMETHING HERE",
 };
 
 interface RootLayoutProps {
