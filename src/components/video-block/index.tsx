@@ -8,6 +8,7 @@ interface VideoBlockProps {
   videos: string[];
   background: string;
   children: ReactNode;
+  label: string;
 }
 
 export default function VideoBlock(props: VideoBlockProps) {
@@ -34,6 +35,7 @@ export default function VideoBlock(props: VideoBlockProps) {
         loop
         muted
         playsInline
+        aria-label={props.label}
       >
         {props.videos.map((video) => (
           <source key={video} src={video} />

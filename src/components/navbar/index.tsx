@@ -70,7 +70,7 @@ export default function Navbar(props: NavbarProps) {
             <Image
               src={logo_image as StaticImageData}
               loading="lazy"
-              alt="Logo Image"
+              alt="Grow and Connect Therapy Logo"
               className="h-full transition-all duration-1000 hover:rotate-[360deg]"
               style={{ width: "auto" }}
             />

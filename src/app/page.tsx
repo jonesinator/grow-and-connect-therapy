@@ -100,7 +100,7 @@ export default function Page() {
           <div className="mt-[-10em] md:mt-[-16.875em] mx-auto relative flex justify-center">
             <Image
               src={mountains_1}
-              alt="Tree in a field."
+              alt="View of a serene mountain valley with towering peaks, dense evergreen forests, and a bright blue sky, conveying a sense of calm and natural beauty."
               className="md:mx-6 object-cover border-t border-b md:border border-theme-black rounded-0 md:rounded-[4em] relative overflow-hidden max-h-[45em] md:drop-shadow-lg"
               priority={true}
             />
@@ -134,7 +134,7 @@ export default function Page() {
               </div>
               <Image
                 src={expand_left}
-                alt=""
+                alt="A couple embracing affectionately, with one partner gently kissing the other’s head. They are outdoors on a cloudy day, creating a warm and intimate moment of connection."
                 className="w-full h-[30rem] object-cover border border-theme-black rounded-b-3xl rounded-t-[24em]"
               />
               <h3 className="theme-text-h6 pt-4">Open and Affirming Therapy</h3>
@@ -146,7 +146,7 @@ export default function Page() {
               </div>
               <Image
                 src={expand_middle}
-                alt=""
+                alt="A cozy scene featuring a person sitting on a bed with a laptop, while a golden retriever sleeps peacefully nearby, creating a calm and inviting home atmosphere."
                 className="w-full h-[30rem] object-cover border border-theme-black rounded-full"
               />
               <h3 className="theme-text-h6 pt-4">Teletherapy</h3>
@@ -158,7 +158,7 @@ export default function Page() {
               </div>
               <Image
                 src={expand_right}
-                alt=""
+                alt="A person sitting cross-legged on a large rock in a peaceful outdoor setting, meditating with eyes closed and hands resting on their knees, surrounded by tall grass and natural serenity."
                 className="h-[30rem] object-cover border border-theme-black rounded-tl-3xl rounded-tr-[10em] rounded-bl-[10em] rounded-br-3xl"
               />
               <h3 className="theme-text-h6 pt-4">
@@ -178,27 +178,27 @@ export default function Page() {
           <>
             <Image
               src={woman_with_laptop}
-              alt="Tree"
+              alt="A woman sitting on a bed, sipping from a mug while working on a laptop placed on a wooden tray. An open book and notes are scattered nearby, creating a cozy and focused atmosphere."
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={couple_in_snow}
-              alt="Woman"
+              alt="A joyful couple standing back-to-back in a snowy forest, dressed in warm winter clothes, laughing as snow falls gently around them, with a snow-covered tree in the background."
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={man_with_dogs}
-              alt="Man"
+              alt="A man in a hoodie standing on a misty beach, looking down at two dogs sitting attentively at his feet, with a large rock formation in the background, creating a peaceful and introspective scene."
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={man_and_woman_with_flowers}
-              alt="Man"
+              alt="A woman gently resting her head on a man’s back while holding a colorful bouquet of flowers in an open, grassy field with rolling hills in the background, evoking a peaceful and intimate moment."
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
             <Image
               src={man_and_child}
-              alt="Man"
+              alt="A smiling man carrying a young child on his shoulders during an outdoor walk, with tall grasses and trees in the background, capturing a joyful and playful moment."
               className="w-auto max-h-[12em] md:max-h-[25em] rounded-2xl border border-theme-black mx-3 my-3 inline-block drop-shadow-lg"
             />
           </>
@@ -219,7 +219,12 @@ export default function Page() {
         </p>
       </PhotoCarousel>
 
-      <Story image={jamie} alt="Man" colors="dark" borders="top">
+      <Story
+        image={jamie}
+        alt="Jamie L. Thompson stands confidently in front of lush green foliage. She has long, reddish-brown hair and glasses, wearing a black, textured top, and offering a calm, relaxed expression."
+        colors="dark"
+        borders="top"
+      >
         <SlideHeader className="pt-6">
           <h2>Grow In Yourself, Connect With Your People</h2>
         </SlideHeader>
@@ -241,6 +246,7 @@ export default function Page() {
       <VideoBlock
         videos={["/video/girl-in-field.webm", "/video/girl-in-field.mp4"]}
         background="/video/girl-in-field.jpg"
+        label="A young woman in a blue dress dancing joyfully in a green field with several black and white cows."
       >
         <p className="theme-text-label text-white">Get relief</p>
         <SlideHeader>
