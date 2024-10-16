@@ -52,9 +52,7 @@ export default function Pricing() {
             <div className="flex flex-row place-items-center gap-6 pt-4">
               <UsersIcon className="size-8 ml-6" />
               <div className="flex flex-col">
-                <h2 className="theme-text-h6 pr-6">
-                  Couples / Relationship Therapy
-                </h2>
+                <h2 className="theme-text-h6 pr-6">Relationship Therapy</h2>
               </div>
             </div>
             <div className="my-4 mx-6 py-8 border-y border-theme-black">

@@ -11,7 +11,6 @@ import woman_with_dog from "./images/woman-with-dog.jpg";
 import icon_1 from "./images/icon-1.png";
 import icon_2 from "./images/icon-2.png";
 import icon_3 from "./images/icon-3.png";
-import icon_4 from "./images/icon-4.png";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -146,26 +145,6 @@ export default function Services() {
                     healthier coping mechanisms, enhance emotional regulation,
                     and create a more supportive, balanced internal dialogue,
                     leading to improved mental health and well-being.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-row place-items-center gap-6 pb-8">
-                <div className="self-start">
-                  <Image src={icon_4} alt="" />
-                </div>
-                <div className="flex flex-col gap-y-2">
-                  <h3 className="theme-text-h5">Gottman Method</h3>
-                  <p className="text-justify">
-                    The Gottman Approach to couples therapy is helpful because
-                    it provides research-based strategies to improve
-                    communication, resolve conflicts, and strengthen the
-                    emotional connection between partners. This approach focuses
-                    on building healthy relationship habits and addressing areas
-                    of distress in a structured and practical way. Overall, the
-                    Gottman Approach helps couples create a more resilient,
-                    loving partnership by improving communication, managing
-                    conflict, and enhancing emotional intimacy, all grounded in
-                    scientific research.
                   </p>
                 </div>
               </div>

@@ -158,52 +158,30 @@ export default function Specialties() {
         colors="bright"
       >
         <SlideHeader>
-          <h2 className="theme-text-h3 self-start">
-            Relationship/Couples Therapy
-          </h2>
+          <h2 className="theme-text-h3 self-start">Relationship Therapy</h2>
         </SlideHeader>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
-          “Relationships take work” said almost every couples therapist, life
-          coach or relationships expert ever. But how do we know what type of
-          work to put in to change or improve things? Often it can feel like
-          we’re working so very hard only to spin our wheels without any
-          meaningful movement. It can be incredibly painful to be in a
-          relationship that has been fulfilling and to know it can be fulfilling
-          again when you feel stuck in where you are now. And intimate
-          relationships don’t come with a road map or guide to get you from
-          where you are to where you want to be. Finding any hope or your own
-          path forward is difficult when it takes everything you have just to
-          get through each day.
+          “Relationships take work” said almost every therapist, life coach, or
+          relationship expert ever. But how do we know what type of work to put
+          in so that we can change or improve things? Often it can feel like
+          we’re giving everything we have, but spinning our wheels rather than
+          moving forward. It can be incredibly painful to look around and be so
+          far away from where we want to be and what we want our relationships
+          to look like. Unfortunately, there is no universal road map that gets
+          everyone from point A to point B reliably. And many of the maps are
+          outdated, or in a different language, or seem to be made for someone
+          who is not like you.
         </p>
         <p className="text-justify" style={{ textAlignLast: "right" }}>
-          As a therapist who works with intimate partners, my goals are to help
-          you communicate effectively, be heard in your relationship and
-          increase overall intimacy. All relationships are complex and often go
-          through significant changes that can be tough to know how to navigate.
-          Intimate relationships are not exempt from this and often come with
-          additional complexities and struggles. My work assists you in
-          thoroughly assessing your relationship, building friendship and
-          intimacy, and improving communication. Fighting alone doesn’t mean you
-          should end the relationship - learning how to fight in a healthy way
-          can make all the difference.
-        </p>
-        <p className="text-justify" style={{ textAlignLast: "right" }}>
-          The work I do with intimate partners is heavily influenced by the work
-          and teachings of&nbsp;
-          <Link href="https://www.gottman.com/" className="underline">
-            The Gottman Institute
-          </Link>
-          &nbsp;and&nbsp;
-          <Link
-            href="https://www.instituteforrelationalintimacy.com/"
-            className="underline"
-          >
-            The Institute for Relational Intimacy
-          </Link>
-          . I’m affirming of both monogamous and polyamorous relationships.
-          Regardless of the structure, it’s important to know how to communicate
-          clearly, negotiate boundaries and expectations, and live your values
-          within the context of your relationship.
+          As a therapist who works with intimate partners, I specialize in
+          working with folks who are polyamorous of all relationship structures.
+          Being polyamorous doesn’t automatically mean that there aren’t things
+          that cause problems in relationships, or that you don’t need someone
+          to give you directions from time to time. I also enjoy working with
+          people who are polycurious, who perhaps want to explore that further
+          or are considering opening up their relationship. Polyamorous
+          relationships look all sorts of different ways, and I would be honored
+          to guide you while you decide what you want without bias.
         </p>
         <ArrowButton>
           <Link href="/contact">Get in Touch</Link>

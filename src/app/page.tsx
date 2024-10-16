@@ -306,14 +306,24 @@ export default function Page() {
                     >
                       mindfulness and self-compassion strategies
                     </Link>
-                    &nbsp;in my therapeutic work with individual clients. I use
-                    the&nbsp;
-                    <Link href="/services#gottman" className="text-theme-white">
-                      Gottman approach
+                    &nbsp;in addition to techniques from other modalities to
+                    tailor my therapeutic work with individual clients. My
+                    relational therapy clients will get those techniques as well
+                    as therapy influenced by the&nbsp;
+                    <Link
+                      href="https://www.gottman.com/"
+                      className="text-theme-white"
+                    >
+                      Gottman method
                     </Link>
-                    &nbsp;in addition, to guide my work with multiple clients in
-                    relationships. I’m happy to explain what this looks like
-                    more in a&nbsp;
+                    &nbsp;and the&nbsp;
+                    <Link
+                      href="https://www.instituteforrelationalintimacy.com"
+                      className="text-theme-white"
+                    >
+                      Institute for Relational Intimacy
+                    </Link>
+                    . I'm happy to discuss any of this in more detail in a&nbsp;
                     <Link href="/contact" className="text-theme-white">
                       consultation call
                     </Link>
